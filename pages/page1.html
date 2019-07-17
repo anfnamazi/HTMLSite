@@ -2,6 +2,8 @@
 <html>
 <head>
 <title>table 1</title>
+<link rel="stylesheet" href="pagination.css" />
+<script type="text/javascript" src="pagination.js"></script>
 <style>
 table, th, td {
 border: 2px solid #000;
@@ -19,22 +21,20 @@ margin-right:auto;
 }
 
 div a {
-background-color:#ccc;
+background-color:#ddd;
 text-decoration: none;
 padding: 5px;
 
 }
 
-nav {
-width: 5em;
-margin: auto;
+@media screen and (max-height: 201px) {
+ .pagination {position:static;margin-top:20px} 
 }
-div {
-margin: 20px;
+
+@media screen and (max-width:600px) {
+table{margin-right:10px}
 }
-a:hover{
-background-color:red;
-}
+
 </style>
 </head>
 <body>
@@ -50,12 +50,12 @@ background-color:red;
 </tr>
 </table>
 
-<div>
-<nav>
-<a href="page1.html">1</a>
-<a href="page2.html">2</a>
-<a href="page3.html">3</a>
-</nav>
+<div class="pagination">
+  <a href="page1.html" id="btn1" class="mySlides demo" onclick="currentDiv(1)">1</a>
+  <a href="page2.html" id="btn2" class="mySlides demo" onclick="currentDiv(2)">2</a>
+  <a href="page3.html" id="btn3" class="mySlides demo" onclick="currentDiv(3)">3</a>
 </div>
+<script type="text/javascript" src="pagination.js"></script>
+
 </body>
 </html>

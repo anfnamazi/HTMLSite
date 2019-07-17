@@ -1,0 +1,32 @@
+.pagination {
+	position: absolute;
+	top:17em;
+	left:190px;
+text-align:center;
+}
+
+.pagination a {
+  color: black;
+  float: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.active{
+background-color: red;
+}
+
+.pagination a.w3-cyan{
+background-color: cyan;
+}
+div a {
+cursor:pointer;
+}

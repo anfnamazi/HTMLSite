@@ -2,6 +2,8 @@
 <html>
 <head>
 <title>Example</title>
+<link rel="stylesheet" href="pagination.css" />
+<script type="text/javascript" src="pagination3.js"></script>
 <style>
 table.roundedCorners { 
   border: 1px solid DarkOrange;
@@ -21,21 +23,10 @@ margin-left:auto;
 margin-right:auto;
 }
 div a {
-background-color:#ccc;
+background-color:#ddd;
 text-decoration: none;
 padding: 5px;
 
-}
-
-nav {
-width: 5em;
-margin: auto;
-}
-div {
-margin: 20px;
-}
-a:hover{
-background-color:red;
 }
 </style>
 </head>
@@ -67,12 +58,11 @@ background-color:red;
     <td>Table cell</td>
   </tr>
 </table>
-<div>
-<nav>
-<a href="page1.html">1</a>
-<a href="page2.html">2</a>
-<a href="page3.html">3</a>
-</nav>
+<div class="pagination">
+  <a href="page1.html" id="btn1" class="mySlides demo" onclick="currentDiv(1)">1</a>
+  <a href="page2.html" id="btn2" class="mySlides demo" onclick="currentDiv(2)">2</a>
+  <a href="page3.html" id="btn3" class="mySlides demo" onclick="currentDiv(3)">3</a>
 </div>
+<script type="text/javascript" src="pagination3.js"></script>
 </body>
 </html>
