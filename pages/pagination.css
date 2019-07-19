@@ -18,7 +18,7 @@ text-align:center;
   color: white;
 }
 
-.pagination a:hover:not(.active) {background-color: #ddd;}
+.pagination a:hover:not(.w3-cyan) {background-color: #aaa;}
 
 .active{
 background-color: red;
