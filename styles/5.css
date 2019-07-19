@@ -114,6 +114,7 @@ li a:hover, .dropdown:hover {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 14px;}
   .sidenav a {font-size: 16px;}
+  .dropdown-btn{font-size: 16px;}
 }
 
 /*slide show img*/
@@ -123,6 +124,7 @@ li a:hover, .dropdown:hover {
 .w3-right, .w3-left {
 	color: red;
 }
+
 
 .ff {
 	position:absolute;
@@ -138,7 +140,7 @@ li a:hover, .dropdown:hover {
 footer{
 	width:100%;
 	position:static;
-	margin-top:31.5em;
+	margin-top:35.5em;
 	background-color: #444;
 	padding:20px 20px 20px 220px;
 	color:#fff;
@@ -150,6 +152,8 @@ footer{
   ul {margin-left:146px;}
   .ff{position:static;}
   footer {padding-left:170px;margin-top:0;}
+    .dropdown-btn{font-size: 16px;}
+
 }
 
 @media screen and (max-width:600px) {
