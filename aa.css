@@ -1,0 +1,18 @@
+div .yes,div .no {
+	background-color: red;
+	color: white;
+	padding:20px;
+	width: 200px;
+	margin:20px;
+	position: relative;
+	left:0;
+	
+}
+.yes {
+	transition: background-color 2s ease-in,left 4s linear;
+	
+}
+.all:hover .yes,.all:hover .no {
+		background-color:blue;
+		left:400px;
+}
