@@ -37,7 +37,7 @@ li a:hover, .dropdown:hover {
 
 .dropdown-content {
   display: none;
-  position: fixed;
+  position: absolute;
   background-color: #fff;
   min-width: 120px;
   box-shadow: 0px 7px 12px  ;
@@ -169,6 +169,9 @@ footer{
 	footer{margin-top:0}
 }
 
-
+.lorem {
+	position: absolute;
+	
+}
 
 
