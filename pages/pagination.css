@@ -18,14 +18,15 @@ text-align:center;
   color: white;
 }
 
-.pagination a:hover:not(.w3-cyan) {background-color: #aaa;}
+.pagination a:hover:not(.green-btn) {background-color: #aaa;}
 
 .active{
 background-color: red;
 }
 
-.pagination a.w3-cyan{
-background-color: cyan;
+.pagination a.green-btn{
+background-color: lightgreen;
+color:#fff;
 }
 div a {
 cursor:pointer;
