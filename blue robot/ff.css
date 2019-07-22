@@ -1,0 +1,25 @@
+div iframe {
+	width:2em;
+	height:5em;
+	overflow-x:hidden;
+	margin-left:20em;
+	border:hidden;
+	
+}
+
+img {
+	animation: move 1s steps(8,start);
+	position:relative;
+	right:-16em;
+	float:right;
+	animation-iteration-count: 90;
+	
+}
+	@keyframes move{
+		0%{right:-314px;}
+		
+
+		100%{right:-14px;}
+		
+	}
+	
