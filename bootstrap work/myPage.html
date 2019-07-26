@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="css/bootstrap-rtl.css" />
     <script src="Scripts/jquery-1.10.2.min.js"></script>
     <script src="Scripts/bootstrap-rtl.js"></script>
+<style>.list-group-item-mine {
+  background-color: #f1f9fb;
+  border-top: 1px solid #0091b5;
+  border-left-color: #fff;
+  border-right-color: #fff;
+}
+
+.list-group-item-mine a:hover {
+  background-color: red;
+
+}</style>
 </head>
 <body>
     
@@ -106,7 +117,7 @@
               </div>
               <br/>
               <br/>
-<p style="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab voluptatum quod a sunt illo doloremque tempora facere dolore esse explicabo. At beatae sint, totam accusamus odit sed deserunt. Nulla, possimus?</p>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab voluptatum quod a sunt illo doloremque tempora facere dolore esse explicabo. At beatae sint, totam accusamus odit sed deserunt. Nulla, possimus?</p>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sed blanditiis veniam tempore distinctio asperiores quibusdam eos vitae ullam. Doloremque perferendis atque rem pariatur vero ad impedit labore architecto debitis!</p>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam vel nam voluptas magni eius dolorum, similique blanditiis deserunt incidunt ullam facere sequi necessitatibus, provident consequatur ex dolorem sunt tenetur accusantium.</p>
 <div class="row">
@@ -115,8 +126,23 @@
       <img src="images/1.jpg" alt="...">
       <div class="caption">
         <h3>lorem ipsum...</h3>
-        <p style="direction: ltr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit unde necessitatibus similique repellendus, rerum vero deleniti dicta aliquam atque labore. Nulla eveniet architecto incidunt sint porro quaerat illum, laboriosam qui.</p>
-        <p><a href="#" class="btn btn-primary" role="button">more</a> <a href="#" class="btn btn-default" role="button">share</a></p>
+        <p style="direction: ltr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit unde necessitatibus similique repellendus...</p>
+        <p><a href="#" class="btn btn-primary" role="button"  btn-lg" data-toggle="modal" data-target="#myModal"  >more</a> <a href="#" class="btn btn-default" role="button">share</a></p>
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel" style="direction: ltr">lorem ipsum...</h4>
+              </div>
+              <div class="modal-body">
+                <img class="col-lg-12" src="images/1.jpg"><p style="direction: ltr;margin-top: 25px">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita hic deleniti atque similique totam cum facilis ipsam modi. Hic, sint deleniti ad quae sit accusantium quos deserunt ex dolores natus!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
@@ -125,7 +151,7 @@
       <img src="images/2.jpg" alt="...">
       <div class="caption">
         <h3>lorem ipsum...</h3>
-        <p style="direction: ltr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit unde necessitatibus similique repellendus, rerum vero deleniti dicta aliquam atque labore. Nulla eveniet architecto incidunt sint porro quaerat illum, laboriosam qui.</p>
+        <p style="direction: ltr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit unde necessitatibus similique repellendus...</p>
         <p><a href="#" class="btn btn-primary" role="button">more</a> <a href="#" class="btn btn-default" role="button">share</a></p>
       </div>
     </div>
@@ -135,7 +161,7 @@
       <img src="images/3.jpg" alt="...">
       <div class="caption">
         <h3>lorem ipsum...</h3>
-        <p style="direction: ltr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit unde necessitatibus similique repellendus, rerum vero deleniti dicta aliquam atque labore. Nulla eveniet architecto incidunt sint porro quaerat illum, laboriosam qui.</p>
+        <p style="direction: ltr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit unde necessitatibus similique repellendus...</p>
         <p><a href="#" class="btn btn-primary" role="button">more</a> <a href="#" class="btn btn-default" role="button">share</a></p>
       </div>
     </div>
@@ -144,24 +170,24 @@
 
             </div>
             <div class="col-md-3 col-sm-4 col-xs-12 pull-right" id="sidebar">
-              <div class="list-group" style="margin-top: 60px">
+              <div class="list-group" style="margin-top: 60px;">
                 <a href="#" class="list-group-item active">
                   Cras justo odio
                 </a>
                 <a href="#" class="list-group-item">Dapibus ac facilisis in   <span class="badge">14</span></a>
                 <a href="#" class="list-group-item">Morbi leo risus  <span class="badge">14</span></a>
                 <a href="#" class="list-group-item">Porta ac consectetur ac   <span class="badge">14</span></a>
-                <a class="btn list-group-item" style="text-align: right" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                    dropdown <i class="caret" style="vertical-align: -4px"></i>
-                  </a>
+                <button class="list-group-item" style="text-align: right;font-family: 'Times New Roman', Times, serif; width:100%;" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    dropdown <i class="glyphicon glyphicon-chevron-down" style="vertical-align: -4px;font-size: x-small;"></i>
+                </button>
                 
                   <div class="collapse" id="collapseExample">
                     <div class="well">
                       <div class="list-group row container-fluid" style="margin:-20px -20px -25px ">
 
-                        <a href="#" class="list-group-item panel-footer list-group-item-hover">Morbi leo risus</a>
-                        <a href="#" class="list-group-item panel-footer">Porta ac consectetur ac</a>
-                        <a href="#" class="list-group-item panel-footer">Vestibulum at eros</a>
+                        <a href="#" class="list-group-item list-group-item-mine ">Morbi leo risus</a>
+                        <a href="#" class="list-group-item list-group-item-mine">Porta ac consectetur ac</a>
+                        <a href="#" class="list-group-item list-group-item-mine">Vestibulum at eros</a>
                       </div>
                     </div>
                   </div>
