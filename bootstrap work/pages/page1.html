@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>table</title>
+    <link rel="stylesheet" href="css/bootstrap-rtl.css" />
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/bootstrap-rtl.js"></script>
+    <style>
+        .list-group-item-mine {
+          background-color: #f1f9fb;
+          border-top: 1px solid #0091b5;
+          border-left-color: #fff;
+          border-right-color: #fff;
+        }
+        .list-group-item-mine a:hover {
+          background-color: red;
+          color: white;
+        }
+        
+        </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                myPage
+            </a>
+          </div>
+      
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">
+                    <i class="glyphicon glyphicon-home"></i>   
+                <span class="sr-only">(current)</span></a></li>
+              <li><a href="#">Link</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="navbar-form navbar-left">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default">
+                  <i class="glyphicon glyphicon-search"></i>
+              </button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Link</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+      <div class="container">
+      <div class="row">
+        <div class="col-md-9 col-sm-8 col-xs-12 pull-left" id="content" style="margin-top: 65px">
+            <table class="table table-hover table-bordered">
+                <tr>
+                  <th>Table Header</th>
+                  <th>Table Header</th>
+                  <th>Table Header</th>
+                </tr>
+                <tr>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                </tr>
+                <tr>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                </tr>
+                <tr>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                </tr>
+                <tr>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                </tr>
+                <tr>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                </tr>
+              </table>
+              <br>
+              <br>
+              <table class="table table-condensed table-bordered">
+                <tr>
+                  <th>Table Header</th>
+                  <th>Table Header</th>
+                  <th>Table Header</th>
+                </tr>
+                <tr>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                </tr>
+                <tr>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                </tr>
+                <tr>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                </tr>
+                <tr>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                </tr>
+                <tr>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                </tr>
+              </table>
+              <br>
+              <br>
+              <table class="table table-striped table-bordered">
+                <tr>
+                  <th>Table Header</th>
+                  <th>Table Header</th>
+                  <th>Table Header</th>
+                </tr>
+                <tr>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                </tr>
+                <tr>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                </tr>
+                <tr>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                </tr>
+                <tr>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                </tr>
+                <tr>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                </tr>
+              </table>
+            </div>
+
+
+      <div class="col-md-3 col-sm-4 col-xs-12 pull-right" id="sidebar">
+        <div class="list-group" style="margin-top: 60px;">
+          <a href="#" class="list-group-item active">
+            Cras justo odio
+          </a>
+          <a href="#" class="list-group-item">Dapibus ac facilisis in   <span class="badge">14</span></a>
+          <a href="#" class="list-group-item">Morbi leo risus  <span class="badge">14</span></a>
+          <a href="#" class="list-group-item">Porta ac consectetur ac   <span class="badge">14</span></a>
+          <button class="list-group-item" style="text-align: right;font-family: 'Times New Roman', Times, serif; width:100%;" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              dropdown <i class="glyphicon glyphicon-chevron-down" style="vertical-align: -4px;font-size: x-small;"></i>
+          </button>
+          
+            <div class="collapse" id="collapseExample">
+              <div class="well">
+                <div class="list-group row container-fluid" style="margin:-20px -20px -25px ">
+
+                  <a href="#" class="list-group-item list-group-item-mine ">Morbi leo risus</a>
+                  <a href="#" class="list-group-item list-group-item-mine">Porta ac consectetur ac</a>
+                  <a href="#" class="list-group-item list-group-item-mine">Vestibulum at eros</a>
+                </div>
+              </div>
+            </div>
+          <a href="#" class="list-group-item">Vestibulum at eros   <span class="badge">14</span></a>
+        </div>
+        <div class="panel panel-primary"><div class="panel panel-heading">personal page</div>
+        <div class="panel panel-body">
+   wellcome
+      </div>
+      </div>
+      </div>
+    </div>
+      </div>
+
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel-footer " id="footer" style="background-color:rgb(36, 35, 35);padding:30px;margin-top: 30px;color:#fff;direction: ltr"><p>&copy Copyright 1999-2019 by Refsnes Data. All Rights Reserved.</p></div>
+
+</body>
+</html>
