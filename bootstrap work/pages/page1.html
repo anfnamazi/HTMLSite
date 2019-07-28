@@ -10,17 +10,48 @@
     <script src="Scripts/bootstrap-rtl.js"></script>
     <style>
         .list-group-item-mine {
-          background-color: #f1f9fb;
-          border-top: 1px solid #0091b5;
-          border-left-color: #fff;
-          border-right-color: #fff;
-        }
-        .list-group-item-mine a:hover {
-          background-color: red;
-          color: white;
-        }
+  background-color: #f1f9fb;
+  border-top: 1px solid #0091b5;
+  border-left-color: #fff;
+  border-right-color: #fff;
+}
+.list-group-item-mine a:hover {
+  background-color: red;
+  color: white;
+}
+
+.dropdown-container {
+  display: none;
+  padding-left: 8px;
+}
+
+.dropdown-container a {
+  color: #262626;
+  padding: 12px 16px;
+  display: block;
+  text-align: left;
+}
+
         
         </style>
+
+<script>
+  /*dropdown btn sidebar*/
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+  var i;
+  
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+    dropdownContent.style.display = "none";
+    } else {
+    dropdownContent.style.display = "block";
+    }
+    });
+  }
+   </script>
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -191,29 +222,27 @@
 
       <div class="col-md-3 col-sm-4 col-xs-12 pull-right" id="sidebar">
         <div class="list-group" style="margin-top: 60px;">
-          <a href="#" class="list-group-item active">
+          <a href="#" class="list-group-item">
             Cras justo odio
           </a>
           <a href="#" class="list-group-item">Dapibus ac facilisis in   <span class="badge">14</span></a>
           <a href="#" class="list-group-item">Morbi leo risus  <span class="badge">14</span></a>
           <a href="#" class="list-group-item">Porta ac consectetur ac   <span class="badge">14</span></a>
-          <button class="list-group-item" style="text-align: right;font-family: 'Times New Roman', Times, serif; width:100%;" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-              dropdown <i class="glyphicon glyphicon-chevron-down" style="vertical-align: -4px;font-size: x-small;"></i>
-          </button>
-          
-            <div class="collapse" id="collapseExample">
-              <div class="well">
-                <div class="list-group row container-fluid" style="margin:-20px -20px -25px ">
-
-                  <a href="#" class="list-group-item list-group-item-mine ">Morbi leo risus</a>
-                  <a href="#" class="list-group-item list-group-item-mine">Porta ac consectetur ac</a>
-                  <a href="#" class="list-group-item list-group-item-mine">Vestibulum at eros</a>
+         
+              
+              <a class="list-group-item btn dropdown-btn" style="width: 100%; text-align:right;cursor: pointer;">Dropdown 
+                <i class="glyphicon glyphicon-chevron-down" style="vertical-align: -4px;font-size: x-small;"></i>
+              </a>
+                <div class="dropdown-container ">
+                  <a class="list-group-item list-group-item-mine" href="#">Link 1</a>
+                  <a class="list-group-item list-group-item-mine" href="#">Link 2</a>
+                  <a class="list-group-item list-group-item-mine" href="#">Link 3</a>
                 </div>
-              </div>
-            </div>
+
+
           <a href="#" class="list-group-item">Vestibulum at eros   <span class="badge">14</span></a>
         </div>
-        <div class="panel panel-primary"><div class="panel panel-heading">personal page</div>
+        <div class="panel panel-info"><div class="panel panel-heading">personal page</div>
         <div class="panel panel-body">
    wellcome
       </div>
@@ -221,7 +250,23 @@
       </div>
     </div>
       </div>
-
+      <script>
+        /*dropdown btn sidebar*/
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+          } else {
+          dropdownContent.style.display = "block";
+          }
+          });
+        }
+         </script>
 
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel-footer " id="footer" style="background-color:rgb(36, 35, 35);padding:30px;margin-top: 30px;color:#fff;direction: ltr"><p>&copy Copyright 1999-2019 by Refsnes Data. All Rights Reserved.</p></div>
 
