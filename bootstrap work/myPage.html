@@ -7,48 +7,8 @@
     <link rel="stylesheet" href="css/bootstrap-rtl.css" />
     <script src="Scripts/jquery-1.10.2.min.js"></script>
     <script src="Scripts/bootstrap-rtl.js"></script>
-<style>
-.list-group-item-mine {
-  background-color: #f1f9fb;
-  border-top: 1px solid #0091b5;
-  border-left-color: #fff;
-  border-right-color: #fff;
-}
-.list-group-item-mine a:hover {
-  background-color: red;
-  color: white;
-}
-
-.dropdown-container {
-  display: none;
-  padding-left: 8px;
-}
-
-.dropdown-container a {
-  color: #262626;
-  padding: 12px 16px;
-  display: block;
-  text-align: left;
-}
-
-</style>
-<script>var a = document.getElementById('inputEmail3');var b=document.getElementById('inputPassword3');function sub(){if (a.value==''){alert('please enter email');document.getElementById('myform').action='myPage.html';}if(b.value==''){alert('enter password');document.getElementById('myform').action='myPage.html';}}
-/*dropdown btn sidebar*/
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
-
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-  this.classList.toggle("active");
-  var dropdownContent = this.nextElementSibling;
-  if (dropdownContent.style.display === "block") {
-  dropdownContent.style.display = "none";
-  } else {
-  dropdownContent.style.display = "block";
-  }
-  });
-}
- </script>
+    <link rel="stylesheet" href="css/myPage.css">
+<script type="text/javascript" src="scripts/myPage.js"></script>
 
 </head>
 <body>
@@ -257,7 +217,7 @@ for (i = 0; i < dropdown.length; i++) {
               </div>
               <div class="panel panel-info"><div class="panel panel-heading">login page</div>
               <div class="panel panel-body">
-              <form id="myform" class="form-horizontal" action="pages/page1.html">
+              <form id="myform" class="form-horizontal" action="page1.html">
                 <div class="form-group">
                   <label for="inputEmail3" class="col-sm-6 control-label" style="text-align:right">Email</label>
                   <div class="col-sm-12">
@@ -288,23 +248,8 @@ for (i = 0; i < dropdown.length; i++) {
             </div>
             </div>
 
-            <script>var a = document.getElementById('inputEmail3');var b=document.getElementById('inputPassword3');function sub(){if (a.value==''){alert('please enter email');document.getElementById('myform').action='myPage.html';}if(b.value==''){alert('enter password');document.getElementById('myform').action='myPage.html';}}
-              /*dropdown btn sidebar*/
-              var dropdown = document.getElementsByClassName("dropdown-btn");
-              var i;
-              
-              for (i = 0; i < dropdown.length; i++) {
-                dropdown[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var dropdownContent = this.nextElementSibling;
-                if (dropdownContent.style.display === "block") {
-                dropdownContent.style.display = "none";
-                } else {
-                dropdownContent.style.display = "block";
-                }
-                });
-              }
-               </script>
+            <script type="text/javascript" src="scripts/myPage.js"></script>
+
 
             </div>
             

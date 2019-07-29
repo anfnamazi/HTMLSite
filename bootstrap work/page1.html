@@ -8,50 +8,9 @@
     <link rel="stylesheet" href="css/bootstrap-rtl.css" />
     <script src="Scripts/jquery-1.10.2.min.js"></script>
     <script src="Scripts/bootstrap-rtl.js"></script>
-    <style>
-        .list-group-item-mine {
-  background-color: #f1f9fb;
-  border-top: 1px solid #0091b5;
-  border-left-color: #fff;
-  border-right-color: #fff;
-}
-.list-group-item-mine a:hover {
-  background-color: red;
-  color: white;
-}
+    <link rel="stylesheet" href="css/myPage.css">
+<script type="text/javascript" src="scripts/myPage.js"></script>
 
-.dropdown-container {
-  display: none;
-  padding-left: 8px;
-}
-
-.dropdown-container a {
-  color: #262626;
-  padding: 12px 16px;
-  display: block;
-  text-align: left;
-}
-
-        
-        </style>
-
-<script>
-  /*dropdown btn sidebar*/
-  var dropdown = document.getElementsByClassName("dropdown-btn");
-  var i;
-  
-  for (i = 0; i < dropdown.length; i++) {
-    dropdown[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-    dropdownContent.style.display = "none";
-    } else {
-    dropdownContent.style.display = "block";
-    }
-    });
-  }
-   </script>
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -250,23 +209,8 @@
       </div>
     </div>
       </div>
-      <script>
-        /*dropdown btn sidebar*/
-        var dropdown = document.getElementsByClassName("dropdown-btn");
-        var i;
-        
-        for (i = 0; i < dropdown.length; i++) {
-          dropdown[i].addEventListener("click", function() {
-          this.classList.toggle("active");
-          var dropdownContent = this.nextElementSibling;
-          if (dropdownContent.style.display === "block") {
-          dropdownContent.style.display = "none";
-          } else {
-          dropdownContent.style.display = "block";
-          }
-          });
-        }
-         </script>
+<script type="text/javascript" src="scripts/myPage.js"></script>
+
 
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel-footer " id="footer" style="background-color:rgb(36, 35, 35);padding:30px;margin-top: 30px;color:#fff;direction: ltr"><p>&copy Copyright 1999-2019 by Refsnes Data. All Rights Reserved.</p></div>
 
