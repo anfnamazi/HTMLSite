@@ -1,3 +1,4 @@
+/*dropdown sidebar*/
 .list-group-item-mine {
     background-color: #f1f9fb;
     border-top: 1px solid #0091b5;
@@ -21,6 +22,8 @@
     text-align: left;
   }
   
+
+  /*dropdown menu*/
   .dropdown-submenu {
     position: relative;
 }
@@ -47,7 +50,7 @@
     height: 0;
     border-color: transparent;
     border-style: solid;
-    border-width: 5px 5px 5px 5px;
+    border-width: 5px 5px 5px 0px;
     border-right-color: #ccc;
     margin-top: 5px;
     margin-right: -10px;
@@ -59,4 +62,25 @@
 
 footer .container {
   padding-top: 80px;
+}
+
+/*pagination*/
+.pagination2{display: inline-block;margin-top: 25px;}
+
+.pagination2 a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  direction: ltr;
+}
+
+.pagination2 a:hover:not(.green-btn) {background-color: #ddd;}
+.pagination2 a.green-btn{
+background-color: lightgreen;
+color: #fff;
+}
+div a {
+cursor:pointer;
 }
