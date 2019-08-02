@@ -91,9 +91,22 @@
         </div><!-- /.container-fluid -->
       </nav>
 
+      <div id="mySidebar" class="sidebar" style="margin-top: 50px">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#">link1</a>
+        <a href="#">dropdown1</a>
+        <a href="#">link2</a>
+        <a href="#">dropdown2</a>
+        <a href="#">link3</a>
+      </div>
+      
+      <div id="main" style="margin-top: 30px"></div>
+        <button id="openbtn" class="openbtn" onclick="openNav()" style="position:sticky;top:48px;z-index:1">☰ Toggle Sidebar</button>  
+      
+
       <div class="container">
       <div class="row">
-        <div class="col-md-9 col-sm-8 col-xs-12 pull-left" id="content" style="margin-top: 65px">
+        <div class="col-md-9 col-sm-8 col-xs-12 pull-left" id="content" style="margin-top: 8px">
             <table class="table table-hover table-bordered">
                 <tr>
                   <th>Table Header</th>
@@ -195,7 +208,7 @@
                 </tr>
               </table>
               
-              <div class="col-md-4 col-md-offset-4 pagination2">
+              <div class="pull-left pagination2">
                 <a onclick="plusDivs(-1)" class="btn">&laquo;</a>
                 <a href="#a" id="btn1" class="mySlides" onclick="currentDiv(1)">1</a>
                 <a href="#a" id="btn2" class="mySlides" onclick="currentDiv(2)">2</a>
@@ -206,38 +219,9 @@
 
 
       <div class="col-md-3 col-sm-4 col-xs-12 pull-right" id="sidebar">
-        <div class="list-group" style="margin-top: 60px;">
-          <a href="#" class="list-group-item">
-            Cras justo odio
-          </a>
-          <a href="#" class="list-group-item">Dapibus ac facilisis in   <span class="badge">14</span></a>
-          <a href="#" class="list-group-item">Morbi leo risus  <span class="badge">14</span></a>
-          
-          <a class="list-group-item btn dropdown-btn" style="width: 100%; text-align:right;cursor: pointer;">Dropdown 
-            <i class="glyphicon glyphicon-chevron-down" style="vertical-align: -4px;font-size: x-small;"></i>
-          </a>
-            <div class="dropdown-container ">
-              <a class="list-group-item list-group-item-mine" href="#">Link 1</a>
-              <a class="list-group-item list-group-item-mine" href="#">Link 2</a>
-              <a class="list-group-item list-group-item-mine" href="#">Link 3</a>
-            </div>
-
-          <a href="#" class="list-group-item">Porta ac consectetur ac   <span class="badge">14</span></a>
-         
-              
-              <a class="list-group-item btn dropdown-btn" style="width: 100%; text-align:right;cursor: pointer;">Dropdown 
-                <i class="glyphicon glyphicon-chevron-down" style="vertical-align: -4px;font-size: x-small;"></i>
-              </a>
-                <div class="dropdown-container ">
-                  <a class="list-group-item list-group-item-mine" href="#">Link 1</a>
-                  <a class="list-group-item list-group-item-mine" href="#">Link 2</a>
-                  <a class="list-group-item list-group-item-mine" href="#">Link 3</a>
-                </div>
-
-
-          <a href="#" class="list-group-item">Vestibulum at eros   <span class="badge">14</span></a>
-        </div>
-        <div class="panel panel-info"><div class="panel panel-heading">personal page</div>
+       
+        
+        <div class="panel panel-info" style="margin-top: 37px"><div class="panel panel-heading">personal page</div>
         <div class="panel panel-body">
    wellcome
       </div>
@@ -249,6 +233,6 @@
 
 
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel-footer " id="footer" style="background-color:rgb(36, 35, 35);padding:30px;margin-top: 30px;color:#fff;direction: ltr"><p>&copy Copyright 1999-2019 by Refsnes Data. All Rights Reserved.</p></div>
-
+  
 </body>
 </html>
