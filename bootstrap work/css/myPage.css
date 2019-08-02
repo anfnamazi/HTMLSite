@@ -159,5 +159,4 @@ body {
 }
 
 .active {background-color: rgb(115, 118, 122);color:  white !important}
-.active a {color: white}
-.dropdown-container2 {background-color: rgba(2, 2, 2, 0.349)}
+.dropdown-container2 {display: none;background-color: rgba(2, 2, 2, 0.349)}
