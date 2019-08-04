@@ -54,11 +54,11 @@ function showDivs(n) {
 function openNav() {
   document.getElementById("mySidebar").style.width = "250px";
   document.getElementById("main").style.marginRight = "250px";
-  document.getElementById('openbtn').style.display = "none";
+  document.getElementById('openbtn').classList.add('invisible');
 }
 
 function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementById("main").style.marginRight= "0";
-  document.getElementById('openbtn').style.display = "block";
+  document.getElementById('openbtn').classList.remove('invisible');
 }
