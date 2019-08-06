@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>table</title>
     <link rel="stylesheet" href="css/bootstrap-rtl.css" />
-    <script src="Scripts/jquery-1.10.2.min.js"></script>
-    <script src="Scripts/bootstrap-rtl.js"></script>
+
     <link rel="stylesheet" href="css/myPage.css">
 <script type="text/javascript" src="scripts/myPage.js"></script>
 
@@ -93,25 +92,27 @@
 
       <div id="mySidebar" class="sidebar" style="margin-top: 50px">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <div id="gggggg">
         <a href="#">link1</a>
-        <a class="dropdown-btn btn">Dropdown 
+        <a class="btn btn-danger" type="button" data-toggle="collapse" href="#container1">Dropdown 
           <i class="glyphicon glyphicon-chevron-down" style="vertical-align: -4px;font-size: x-small;"></i>
         </a>
-          <div class="dropdown-container2">
+          <div class="dropdown-container2 collapse" id="container1" data-parent="#gggggg">
             <a class="" href="#">Link 1</a>
             <a class="" href="#">Link 2</a>
             <a class="" href="#">Link 3</a>
           </div>
         <a href="#">link2</a>
-        <a class="dropdown-btn btn">Dropdown 
+        <a class="btn btn-danger" type="button" data-toggle="collapse" href="#container2">Dropdown 
           <i class="glyphicon glyphicon-chevron-down" style="vertical-align: -4px;font-size: x-small;"></i>
         </a>
-          <div class="dropdown-container2">
+          <div class="dropdown-container2 collapse" id="container2" data-parent="#gggggg">
             <a class="" href="#">Link 1</a>
             <a class="" href="#">Link 2</a>
             <a class="" href="#">Link 3</a>
           </div>
         <a href="#">link3</a>
+      </div>
       </div>
       
       <div id="main" style="margin-top: 30px"></div>
@@ -372,10 +373,13 @@
       </div>
     </div>
       </div>
-<script type="text/javascript" src="scripts/myPage.js"></script>
+
 
 
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel-footer " id="footer" style="background-color:rgb(36, 35, 35);padding:30px;margin-top: 30px;color:#fff;direction: ltr"><p>&copy Copyright 1999-2019 by Refsnes Data. All Rights Reserved.</p></div>
-  
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/myPage.js"></script>
 </body>
 </html>

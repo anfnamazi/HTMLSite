@@ -158,5 +158,5 @@ body {
   .sidebar a {font-size: 17px;}
 }
 
-.active {background-color: rgb(115, 118, 122);color:  white !important}
-.dropdown-container2 {display: none;background-color: rgba(2, 2, 2, 0.349)}
+.dropdown-container2 {background-color: rgba(2, 2, 2, 0.349) !important}
+.btn-danger {  background-color: rgba(14, 18, 20, 0.0) !important;border-color: rgba(14, 18, 20, 0.0) !important}

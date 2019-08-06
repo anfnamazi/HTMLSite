@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap4.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-9 col-sm-8 col-xs-12 pull-left" id="content" style="margin-top: 8px">
+  
+            <form class="my-5">
+              <div class="row">
+                   
+                  <div class="form-group col-sm-6">
+                      <label>Email</label>
+                      <input type="email" class="form-control" placeholder="Email">
+                  </div>
+                  <div class="form-group col-sm-6">
+                      <label>Password</label>
+                      <input type="password" class="form-control" placeholder="Password">
+                  </div>
+              </div>
+  
+              <div class="form-group">
+                  <label>Address</label>
+                  <input type="text" class="form-control" placeholder="1234 Main St">
+              </div>
+              <div class="form-group">
+                  <label>Address 2</label>
+                  <input type="text" class="form-control" placeholder="Apartment, studio, or floor">
+              </div>
+  
+              <div class="row">
+                  <div class="form-group col-md-6">
+                      <label>City</label>
+                      <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-md-4">
+                      <label>State</label>
+                      <select class="form-control">
+                          <option selected="">Choose...</option>
+                          <option selected="">Choose...</option>
+                          <option selected="">Choose...</option>
+                          <option selected="">Choose...</option>
+                      </select>
+                  </div>
+                  <div class="form-group col-md-2">
+                      <label>Zip</label>
+                      <input type="text" class="form-control">
+                  </div>
+              </div>
+              <div class="form-group">
+                  <div class="form-check">
+                      <input class="form-check-input" type="checkbox">
+                      <label class="form-check-label">
+                          Check me out
+                      </label>
+                  </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+              
+          </form>
+          <hr style="margin-top: 40px ; margin-bottom:40px">
+          <form>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">note</label>
+                <div class="col-sm-10">
+                    <textarea type="text" class="form-control" placeholder="note"></textarea>
+                </div>
+            </div>
+  
+            <div class="form-group row">
+                <label class="col-sm-2">Radios</label>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" checked="">
+                        <label class="form-check-label">
+                            First radio
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios">
+                        <label class="form-check-label">
+                            Second radio
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" disabled="">
+                        <label class="form-check-label">
+                            Third disabled radio
+                        </label>
+                    </div>
+                </div>
+            </div>
+  
+            <div class="form-group row">
+                <label class="col-sm-2">Checkbox</label>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">
+                            Example checkbox
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">
+                            Example checkbox
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">
+                            Example checkbox
+                        </label>
+                    </div>
+                </div>
+            </div>
+  
+            <div class="container py-3">
+  
+              <!-- Custom Checkbox -->
+            
+              <br>
+              <hr>
+              <br>
+      
+              <!-- Custom Radio -->
+    <div class="row form-group"> 
+            <div class="col">
+    <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="check1">
+        <label class="custom-control-label" for="check1">Check this custom checkbox</label>
+    </div>
+    <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="check2">
+            <label class="custom-control-label" for="check2">Check this custom checkbox</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="check3">
+                <label class="custom-control-label" for="check3">Check this custom checkbox</label>
+            </div>
+            </div>
+    </div>
+<hr class="my-5"/>
+              <div class="row">
+                  
+                  <div class="col">
+                      
+                          <div class="custom-control custom-radio">
+                              <input type="radio" id="radio1" name="a" class="custom-control-input">
+                              <label class="custom-control-label" for="radio1">Toggle this custom radio</label>
+                          </div>
+                          <div class="custom-control custom-radio">
+                              <input type="radio" id="radio2" name="a" class="custom-control-input">
+                              <label class="custom-control-label" for="radio2">Or toggle this other custom radio</label>
+                          </div>
+                      
+                  </div>
+              </div>
+      
+              <br>
+              <hr>
+              <br>
+      
+              <!-- Custom inline radio -->
+              <div class="row">
+                  <div class="col">
+                      <form>
+                          <div class="custom-control custom-radio custom-control-inline">
+                              <input type="radio" id="radio3" name="b" class="custom-control-input">
+                              <label class="custom-control-label" for="radio3">Toggle this custom radio</label>
+                          </div>
+                          <div class="custom-control custom-radio custom-control-inline">
+                              <input type="radio" id="radio4" name="b" class="custom-control-input">
+                              <label class="custom-control-label" for="radio4">Or toggle this other custom radio</label>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+      
+              <hr>
+      
+              <!-- Custom Select -->
+              <div class="row">
+                  <div class="col">
+                      <form>
+                          <select class="custom-select custom-select-lg">
+                              <option selected="">Open this select menu</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                          </select>
+                      </form>
+                  </div>
+              </div>
+      
+              <br>
+              <hr>
+              <br>
+      
+              <!-- Custom Range -->
+              <div class="row">
+                  <div class="col">
+                      <form>
+                          <label>Example range</label>
+                          <input type="range" class="custom-range" min="1" max="10" step="1">
+                      </form>
+                  </div>
+              </div>
+      
+              <br>
+              <hr>
+              <br>
+      
+              <!-- Custom File -->
+              <div class="row">
+                  <div class="col">
+                      <form>
+                          <div class="custom-file">
+                              <input type="file" class="custom-file-input">
+                              <label class="custom-file-label">Choose file</label>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+      
+          </div></form>
+  
+            <div class="form-group row">
+                <div class="col-sm-10 offset-sm-2">
+                    <button type="submit" class="btn btn-primary" style="margin-top: 50px">Submit</button>
+                </div>
+            </div>
+        
+        <hr style="margin-top: 50px;margin-bottom:50px">
+        <form style="margin-top: 60px">
+          <fieldset disabled="">
+            <div class="form-group">
+              <label for="disabledTextInput">Disabled input</label>
+              <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+            </div>
+            <div class="form-group">
+              <label for="disabledSelect">Disabled select menu</label>
+              <select id="disabledSelect" class="form-control">
+                <option>Disabled select</option>
+              </select>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Can't check this
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary mb-5">Submit</button>
+          </fieldset>
+        </form>
+        
+          
+        </div>
+      </div>
+        </div>
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
