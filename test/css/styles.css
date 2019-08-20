@@ -1,0 +1,45 @@
+.navbar{
+    opacity: 0.9;
+}
+#logo{width: 40px;}
+#collapsibleNavId{
+    border-top: 1px solid #ddd;
+    margin-top: 15px;
+}
+@media (min-width: 768px){
+    #collapsibleNavId{
+        border-top: 0;
+        margin-top:0px;
+    }
+}
+
+.showcase{
+    background-image: url(../images/mountains.jpg);
+}
+.overly{
+    background-color: rgba(36, 156, 177, 0.541);
+    padding-top: 110px;
+    padding-bottom: 40px;
+}
+.maintitle{
+    line-height: 180%;
+    font-weight: 300;
+    padding: 80px 0;
+}
+@media(min-width:1200px){
+    .maintitle{font-size: 3rem;}
+    .imgbook{max-width: 84%;margin-right: 0}
+}
+.btn ,.form-control ,.card{border-radius: 0}
+.section-header{max-width: 640px;margin: 10px auto;color: #555}
+#accordianId .card{border: 0}
+#accordianId {border: 1px solid #ddd;max-width: 900px;}
+#authors .card img {margin-top: -50px;}
+#accordianId .card a {cursor: pointer;}
+#contact .input-group-text {
+    width: 52px;border-top-right-radius: 0 !important;border-bottom-right-radius: 0 !important
+}
+#contact .form-control {border-top-left-radius: 0 !important;border-bottom-left-radius: 0 !important}
+.animated {
+    animation-duration: 1.5s
+}
