@@ -8,11 +8,13 @@ $(window).on("scroll load", function () {
     if (top - $(window).scrollTop() < $(window).height() - 220) {
         $("#about .container").addClass("slideInRight").removeClass("invisible");
     }
-    var offset2 = $("#authors .card").offset();
-    var top2 = offset2.top;
-    if (top2 - $(window).scrollTop() < $(window).height() - 220) {
-        $("#authors .card").addClass("zoomIn").removeClass("invisible");
-    }
+    $("#authors .card").each(function () {
+        var offset2 = $(this).offset();
+        var top2 = offset2.top;
+        if (top2 - $(window).scrollTop() < $(window).height() - 220) {
+            $(this).addClass("zoomIn").removeClass("invisible");
+        }
+    });
     var offset3 = $("#contact .col-lg-9").offset();
     var top3 = offset3.top;
     if (top3 - $(window).scrollTop() < $(window).height() - 220) {
