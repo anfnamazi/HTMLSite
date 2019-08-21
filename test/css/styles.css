@@ -18,7 +18,7 @@
 }
 .overly{
     background-color: rgba(36, 156, 177, 0.541);
-    padding-top: 110px;
+    padding-top: 20px;
     padding-bottom: 40px;
 }
 .maintitle{
@@ -42,4 +42,15 @@
 #contact .form-control {border-top-left-radius: 0 !important;border-bottom-left-radius: 0 !important}
 .animated {
     animation-duration: 1.5s
+}
+.link{
+    color: #555;
+    text-decoration: none !important;
+}
+.link:hover{
+    color: red;
+}
+.mybadge{
+    vertical-align: 5px;
+    margin-right: -7px;
 }

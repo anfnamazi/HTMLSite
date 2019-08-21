@@ -22,3 +22,10 @@ $(window).on("scroll load", function () {
         $("#contact .col-lg-3").addClass("fadeInUp").removeClass("invisible");
     }
 });
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 140) {
+        $("nav").addClass("fixed-top slideInDown");
+    } else {
+        $("nav").removeClass("fixed-top slideInDown");
+    }
+});
