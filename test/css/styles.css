@@ -67,3 +67,44 @@
         max-width: 200px;
     }
 }
+#topbtn{
+    z-index: 100;
+    bottom: 20px;
+    left: 20px;
+}
+#topbtn{
+    background-color: rgba(0, 0, 0, 0.404);
+    color: #fff
+}
+#topbtn:hover{
+    background-color: #ccc
+}
+#links-footer>a{
+    font-size: 18px;
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    background-color: #444;
+    color: #eee;
+    line-height: 2.1em;
+    margin-left: 4px;
+    border-radius: 50%;
+    text-align: center;
+    transition-duration: 1s;
+}
+#links-footer>a:hover{
+    background-color: lightgreen
+}
+.list-unstyled>li>a{
+    color: #fff;
+    text-decoration: none
+}
+.list-unstyled>li>a::before{
+    content: ' '
+}
+.list-unstyled>li>a:hover{
+    color: aquamarine
+}
+footer{
+    background-color: #222
+}

@@ -2,9 +2,13 @@ $(window).scroll(function () {
     if ($(window).scrollTop() > 140) {
         $(".navbar").addClass("fixed-top slideInDown");
         $(".mynav").addClass("m-5 p-3");
+        $("#topbtn").removeClass("invisible");
+        $("#topbtn").addClass("fadeIn");
     } else {
         $(".navbar").removeClass("fixed-top slideInDown");
         $(".mynav").removeClass("m-5 p-3");
+        $("#topbtn").addClass("invisible");
+        $("#topbtn").removeClass("fadeIn");
     }
 });
 new SmoothScroll('a[href*="#"]', {
