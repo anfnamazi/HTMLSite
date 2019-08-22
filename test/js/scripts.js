@@ -58,3 +58,5 @@ $('#reset').on('click', function () {
 $('.dropdown-menu>.form-group').click(function (e) {
     e.stopPropagation();
 });
+
+//..................................................................................

@@ -105,7 +105,7 @@
     <section class="showcase">
         <div class="text-dark overly2">
             <div class="container">
-                <form class="needs-validation" novalidate>
+                <form class="needs-validation bg-white p-4 card shadow-lg" novalidate>
                     <fieldset>
                         <legend class="my-4">ثبت نام</legend>
                         <div class="form-row">
@@ -155,10 +155,10 @@
                             </div>
                             <div class="form-group col-sm-6">
                                 <label>پسورد</label>
-                                <input type="password" class="form-control" placeholder="Password" pattern="[\w]{6,}"
-                                    required>
+                                <input type="password" class="form-control" placeholder="Password"
+                                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                                 <div class="invalid-tooltip">
-                                    رمز عبور باید حداقل 6 کاراکتر و با حروف لاتین باشد.
+                                    رمز عبور باید ترکیب عدد و حروف بزرگ و کوچک لاتین و حداقل 8 کاراکتر باشد.
                                 </div>
                                 <div class="valid-tooltip">
                                     پسورد شما مورد قبول است.
@@ -179,14 +179,14 @@
                         </div>
 
                         <div class="row">
-                            <div class="form-group col-md-6">
+                            <div class="form-group col-md-4">
                                 <label>شهر</label>
                                 <input type="text" class="form-control" placeholder="city" required>
                                 <div class="invalid-feedback">
-                                    شهر خود را وارد کنید.
+                                    لطفا شهر خود را وارد کنید.
                                 </div>
                             </div>
-                            <div class="form-group col-md-6">
+                            <div class="form-group col-md-4">
                                 <label>منطقه</label>
                                 <select class="form-control">
                                     <option>Choose1...</option>
@@ -195,26 +195,23 @@
                                     <option>Choose4...</option>
                                 </select>
                             </div>
-                        </div>
-                        <div class="row mt-5">
-                            <div class="col">
-                                <form>
-                                    <label>سن</label>
-                                    <input type="range" class="custom-range text-dark" min="1" max="90" step="1">
-                                </form>
+                            <div class="form-group col-md-4">
+                                <label>سن</label>
+                                <input type="number" class="form-control" placeholder="age" required>
+                                <div class="invalid-feedback">
+                                    لطفا سن خود را وارد کنید.
+                                </div>
                             </div>
                         </div>
                         <div class="row mt-5">
                             <div class="col">
-                                <form>
-                                    <div class="custom-file">
-                                        <input type="file" class="custom-file-input" required>
-                                        <div class="invalid-feedback">
-                                            تصویر کارت ملی خود را وارد نمایید.
-                                        </div>
-                                        <label class="custom-file-label">تصویر کارت ملی</label>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" required>
+                                    <div class="invalid-feedback">
+                                        لطفا تصویر کارت ملی خود را وارد نمایید.
                                     </div>
-                                </form>
+                                    <label class="custom-file-label">تصویر کارت ملی</label>
+                                </div>
                             </div>
                         </div>
                         <div class="form-group my-5">
