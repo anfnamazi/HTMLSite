@@ -1,3 +1,12 @@
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 140) {
+        $(".navbar").addClass("fixed-top slideInDown");
+        $(".mynav").addClass("m-5 p-3");
+    } else {
+        $(".navbar").removeClass("fixed-top slideInDown");
+        $(".mynav").removeClass("m-5 p-3");
+    }
+});
 new SmoothScroll('a[href*="#"]', {
     speed: 1000,
     easing: 'linear'
@@ -22,15 +31,7 @@ $(window).on("scroll load", function () {
         $("#contact .col-lg-3").addClass("fadeInUp").removeClass("invisible");
     }
 });
-$(window).scroll(function () {
-    if ($(window).scrollTop() > 140) {
-        $(".navbar").addClass("fixed-top slideInDown");
-        $(".mynav").addClass("m-5 p-3");
-    } else {
-        $(".navbar").removeClass("fixed-top slideInDown");
-        $(".mynav").removeClass("m-5 p-3");
-    }
-});
+
 //..........................................................................................
 
 // Example starter JavaScript for disabling form submissions if there are invalid fields
