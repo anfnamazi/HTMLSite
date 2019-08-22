@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mysite</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/rtl.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body id="home">
+    <header>
+        <div class="container">
+            <div class="d-flex justify-content-between py-2 myheader">
+                <a class="link" href="" data-toggle="dropdown"> <i class="fa fa-user" aria-hidden="true"></i><span
+                        class="d-none d-md-inline">
+                        وارد شوید</span></a>
+                <div class="dropdown-menu dropdown-menu-right shadow">
+                    <div class="form-group p-2">
+                        <form id="myform" class="" action="">
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-6 control-label"
+                                    style="text-align:right">ایمیل</label>
+                                <div class="col-sm-12">
+                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-sm-6 control-label"
+                                    style="text-align:right">پسورد</label>
+                                <div class="col-sm-12">
+                                    <input type="password" class="form-control" id="inputPassword3"
+                                        placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <div class="custom-control custom-checkbox">
+
+                                        <input id="remember" class="custom-control-input" type="checkbox">
+                                        <label class="custom-control-label" for="remember">مرا به خاطر
+                                            بسپار</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <button type="submit" class="btn btn-default btn-primary">ورود</button>
+                                </div>
+                            </div>
+                            <hr class="my-2" />
+                            <a href="loginPage.html" class="btn btn-success btn-block">ثبت نام کنید</a>
+                        </form>
+                    </div>
+                </div>
+                <a class="link" href="#"> <i class="fa fa-shopping-cart" aria-hidden="true"><small
+                            class="badge badge-pill badge-success mybadge">2</small></i><span
+                        class="d-none d-md-inline">
+                        سبد خرید</span></a>
+                <a class="link" href="#"> <i class="fa fa-heart" aria-hidden="true"></i><span
+                        class="d-none d-md-inline">
+                        علاقه مندیها</span></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="mynav">
+        <nav class="navbar navbar-expand-md navbar-light bg-light py-3 shadow-sm animated">
+            <div class="container">
+                <a class="navbar-brand" href="#home">
+                    <img src="images/logo.svg" id="logo" />
+                    <span class="align-middle">لوگوی شرکت</span>
+                </a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item px-3 py-2">
+                            <a class="nav-link" href="#home">خانه<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item px-3 py-2">
+                            <a class="nav-link" href="#about">درباره کتاب</a>
+                        </li>
+                        <li class="nav-item px-3 py-2">
+                            <a class="nav-link" href="#authors">نویسندگان</a>
+                        </li>
+                        <li class="nav-item px-3 py-2">
+                            <a class="nav-link" href="#contact">تماس با ما</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <section class="showcase">
+        <div class="text-dark overly2">
+            <div class="container">
+                <form class="needs-validation" novalidate>
+                    <fieldset>
+                        <legend class="my-4">ثبت نام</legend>
+                        <div class="form-row">
+                            <div class="col-md-4 mb-5">
+                                <label>نام</label>
+                                <input type="text" class="form-control" placeholder="Name" required />
+                                <div class="invalid-tooltip">
+                                    لطفاً نام خود را وارد کنید.
+                                </div>
+                                <div class="valid-tooltip">
+                                    نام شما وارد شده است.
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-5">
+                                <label>نام خانوادگی</label>
+                                <input type="text" class="form-control" placeholder="Family" required />
+                                <div class="invalid-tooltip">
+                                    لطفاً نام خانوادگی خود را وارد کنید.
+                                </div>
+                                <div class="valid-tooltip">
+                                    نام خانوادگی شما وارد شده است.
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-5">
+                                <label>نام کاربری</label>
+                                <input type="text" class="form-control" placeholder="User Name" pattern="[\w]{3,}"
+                                    required />
+                                <div class="invalid-tooltip">
+                                    نام کاربری باید حداقل 3 کاراکتر و با حروف لاتین باشد.
+                                </div>
+                                <div class="valid-tooltip">
+                                    نام کاربری وارد شده معتبر است.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+
+                            <div class="form-group col-sm-6">
+                                <label>ایمیل</label>
+                                <input type="email" class="form-control" placeholder="Email" required>
+                                <div class="invalid-tooltip">
+                                    لطفاً ایمیل خود را وارد کنید.
+                                </div>
+                                <div class="valid-tooltip">
+                                    ایمیل شما مورد قبول است.
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label>پسورد</label>
+                                <input type="password" class="form-control" placeholder="Password" pattern="[\w]{6,}"
+                                    required>
+                                <div class="invalid-tooltip">
+                                    رمز عبور باید حداقل 6 کاراکتر و با حروف لاتین باشد.
+                                </div>
+                                <div class="valid-tooltip">
+                                    پسورد شما مورد قبول است.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>آدرس</label>
+                            <input type="text" class="form-control" placeholder="1234 Main St" required>
+                            <div class="invalid-feedback">
+                                لطفا آدرس خود را وارد نمایید.
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>ادامه آدرس</label>
+                            <input type="text" class="form-control" placeholder="Apartment, studio, or floor">
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label>شهر</label>
+                                <input type="text" class="form-control" placeholder="city" required>
+                                <div class="invalid-feedback">
+                                    شهر خود را وارد کنید.
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>منطقه</label>
+                                <select class="form-control">
+                                    <option>Choose1...</option>
+                                    <option>Choose2...</option>
+                                    <option>Choose3...</option>
+                                    <option>Choose4...</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col">
+                                <form>
+                                    <label>سن</label>
+                                    <input type="range" class="custom-range text-dark" min="1" max="90" step="1">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col">
+                                <form>
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" required>
+                                        <div class="invalid-feedback">
+                                            تصویر کارت ملی خود را وارد نمایید.
+                                        </div>
+                                        <label class="custom-file-label">تصویر کارت ملی</label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="form-group my-5">
+                            <div class="custom-control custom-checkbox mt-4">
+                                <input type="checkbox" class="custom-control-input" id="custom2" required />
+                                <label class="custom-control-label" for="custom2">
+                                    شرایط و قوانین را قبول دارم.
+                                </label>
+                                <div class="invalid-tooltip">
+                                    شما باید قوانین را بپذیرید.
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">ارسال</button>
+                        <button type="reset" id="reset" class="btn btn-secondary mr-3">بازنشانی</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-info py-5">
+        <div class="container text-center">
+            <h5 class="text-light">کلیه حقوق محفوظ است.</h5>
+        </div>
+    </footer>
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

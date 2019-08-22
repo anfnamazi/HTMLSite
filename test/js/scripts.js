@@ -24,10 +24,37 @@ $(window).on("scroll load", function () {
 });
 $(window).scroll(function () {
     if ($(window).scrollTop() > 140) {
-        $("nav").addClass("fixed-top slideInDown");
+        $(".navbar").addClass("fixed-top slideInDown");
         $(".mynav").addClass("m-5 p-3");
     } else {
-        $("nav").removeClass("fixed-top slideInDown");
+        $(".navbar").removeClass("fixed-top slideInDown");
         $(".mynav").removeClass("m-5 p-3");
     }
+});
+//..........................................................................................
+
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+    'use strict';
+    window.addEventListener('load', function () {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function (form) {
+            form.addEventListener('submit', function (event) {
+                if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+        });
+    }, false);
+})();
+
+$('#reset').on('click', function () {
+    $('form').removeClass('was-validated');
+});
+$('.dropdown-menu>.form-group').click(function (e) {
+    e.stopPropagation();
 });
