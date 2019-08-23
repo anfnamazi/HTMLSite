@@ -21,22 +21,25 @@
                 <a class="link" href="" data-toggle="dropdown"> <i class="fa fa-user" aria-hidden="true"></i><span
                         class="d-none d-md-inline">
                         وارد شوید</span></a>
-                <div class="dropdown-menu dropdown-menu-right shadow">
-                    <div class="form-group p-2">
-                        <form id="myform" class="" action="">
+                <div class="dropdown-menu dropdown-menu-right shadow py-0">
+                    <div class="card">
+                        <div class="card-header"><i class="fa fa-user-circle"></i>
+                            ورود
+                        </div>
+                        <form id="myform" class="card-body" action="">
                             <div class="form-group">
                                 <label for="inputEmail3" class="col-sm-6 control-label"
                                     style="text-align:right">ایمیل</label>
                                 <div class="col-sm-12">
-                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                    <input type="email" class="form-control" placeholder="Email" required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="inputPassword3" class="col-sm-6 control-label"
                                     style="text-align:right">پسورد</label>
                                 <div class="col-sm-12">
-                                    <input type="password" class="form-control" id="inputPassword3"
-                                        placeholder="Password">
+                                    <input type="password" class="form-control" placeholder="Password"
+                                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -75,7 +78,7 @@
             <div class="container">
                 <a class="navbar-brand" href="#home">
                     <img src="images/logo.svg" id="logo" />
-                    <span class="align-middle">لوگوی شرکت</span>
+                    <span class="align-middle">لوگوی موسسه</span>
                 </a>
                 <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
                     data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
@@ -369,7 +372,7 @@
                         </div>
                         <div class="form-group input-group input-group-lg">
                             <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fa fa-user" aria-hidden="true"></i></span>
+                                <span class="input-group-text"><i class="fa fa-pencil" aria-hidden="true"></i></span>
                             </div>
                             <textarea class="form-control" placeholder="متن پیام" rows="5"></textarea>
                         </div>
@@ -387,7 +390,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6 px-3 pb-4 pb-lg-0">
-                    <h5 class="border-bottom pb-2 mb-2">درباره شرکت</h5>
+                    <h5 class="border-bottom pb-2 mb-2">درباره موسسه</h5>
                     <p>
                         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
                         چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
@@ -425,7 +428,7 @@
             </div>
         </div>
         <div style="background-color: black;">
-            <p class="text-center p-3 mb-0">کلیه حقوق برای این شرکت محفوظ است.</p>
+            <p class="text-center p-3 mb-0">کلیه حقوق برای این موسسه محفوظ است.</p>
         </div>
     </footer>
 

@@ -56,12 +56,11 @@ $(window).on("scroll load", function () {
         });
     }, false);
 })();
-
+//..................................................................................
 $('#reset').on('click', function () {
     $('form').removeClass('was-validated');
 });
-$('.dropdown-menu>.form-group').click(function (e) {
+$('.dropdown-menu>.card').click(function (e) {
     e.stopPropagation();
 });
 
-//..................................................................................
