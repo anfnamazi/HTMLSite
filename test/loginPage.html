@@ -76,7 +76,7 @@
     <div class="mynav">
         <nav class="navbar navbar-expand-md navbar-light bg-light py-3 shadow-sm animated">
             <div class="container">
-                <a class="navbar-brand" href="#home">
+                <a class="navbar-brand" href="test1.html">
                     <img src="images/logo.svg" id="logo" />
                     <span class="align-middle">لوگوی موسسه</span>
                 </a>
@@ -88,7 +88,7 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item px-3 py-2">
-                            <a class="nav-link" href="#home">خانه<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="test1.html">خانه<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item px-3 py-2">
                             <a class="nav-link" href="#about">درباره کتاب</a>
@@ -221,7 +221,8 @@
                             <div class="custom-control custom-checkbox mt-4">
                                 <input type="checkbox" class="custom-control-input" id="custom2" required />
                                 <label class="custom-control-label" for="custom2">
-                                    شرایط و قوانین را قبول دارم.
+                                    <a data-toggle="modal" href="#modelId">شرایط و
+                                        قوانین</a> را قبول دارم.
                                 </label>
                                 <div class="invalid-tooltip">
                                     شما باید قوانین را بپذیرید.
@@ -229,7 +230,7 @@
                             </div>
                         </div>
                         <button class="btn btn-primary" type="submit">ارسال</button>
-                        <button type="reset" id="reset" class="btn btn-secondary mr-3">بازنشانی</button>
+                        <button type="reset" id="reset" class="btn btn-outline-secondary mr-4">بازنشانی</button>
                     </fieldset>
                 </form>
             </div>
@@ -285,6 +286,42 @@
     <a class="btn position-fixed rounded-circle invisible animated shadow" id="topbtn" href="#home">
         <b class="fa fa-chevron-up" aria-hidden="true"></b>
     </a>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true"
+        style="z-index: 10000">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">شرایط و قوانین</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-justify">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
+                    و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+                    کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
+                    آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه
+                    ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که
+                    تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی
+                    دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                    <ul class="list-group-item-light mt-3">
+                        <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</li>
+                        <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</li>
+                        <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</li>
+                        <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</li>
+                        <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="js/jquery-3.3.1.min.js"></script>

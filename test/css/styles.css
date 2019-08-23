@@ -108,3 +108,10 @@
 footer{
     background-color: #222
 }
+.modal-body{
+    padding: 50px;
+    line-height: 200%;
+}
+.modal-body li{
+    margin-bottom: 12px;
+}
