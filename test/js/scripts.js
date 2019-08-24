@@ -63,4 +63,10 @@ $('#reset').on('click', function () {
 $('.dropdown-menu>.card').click(function (e) {
     e.stopPropagation();
 });
-
+let i = 2;
+$("#shopbtn").click(function (e) {
+    var copy = $("#mediashop").clone();
+    i += 1;
+    $("#shopshow").append(copy);
+    document.getElementById("mybadge").innerHTML = i;
+});

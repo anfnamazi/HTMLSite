@@ -18,51 +18,80 @@
     <header>
         <div class="container">
             <div class="d-flex justify-content-between py-2 myheader">
-                <a class="link" href="" data-toggle="dropdown"> <i class="fa fa-user" aria-hidden="true"></i><span
-                        class="d-none d-md-inline">
-                        وارد شوید</span></a>
-                <div class="dropdown-menu dropdown-menu-right shadow py-0">
-                    <div class="card">
-                        <div class="card-header"><i class="fa fa-user-circle"></i>
-                            ورود
+                <div class="dropdown">
+                    <a class="link" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i
+                            class="fa fa-user" aria-hidden="true"></i><span class="d-none d-md-inline">
+                            وارد شوید</span></a>
+                    <div class="dropdown-menu dropdown-menu-right shadow py-0" id="drpmenu1">
+                        <div class="card">
+                            <div class="card-header"><i class="fa fa-user-circle"></i>
+                                ورود
+                            </div>
+                            <form id="myform" class="card-body" action="">
+                                <div class="form-group">
+                                    <label class="col-sm-6 control-label">ایمیل</label>
+                                    <div class="col-sm-12">
+                                        <input type="email" class="form-control" placeholder="Email" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-6 control-label">پسورد</label>
+                                    <div class="col-sm-12">
+                                        <input type="password" class="form-control" placeholder="Password"
+                                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <div class="custom-control custom-checkbox">
+                                            <input id="remember" class="custom-control-input" type="checkbox">
+                                            <label class="custom-control-label" for="remember">مرا به خاطر
+                                                بسپار</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <button type="submit" class="btn btn-default btn-primary">ورود</button>
+                                    </div>
+                                </div>
+                                <hr class="my-2" />
+                                <a href="loginPage.html" class="btn btn-success btn-block">ثبت نام کنید</a>
+                            </form>
                         </div>
-                        <form id="myform" class="card-body" action="">
-                            <div class="form-group">
-                                <label class="col-sm-6 control-label">ایمیل</label>
-                                <div class="col-sm-12">
-                                    <input type="email" class="form-control" placeholder="Email" required>
-                                </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="link" href="" data-toggle="dropdown"> <i class="fa fa-shopping-cart"
+                            aria-hidden="true"><small class="badge badge-pill badge-success mybadge"
+                                id="mybadge">2</small></i><span class="d-none d-md-inline">
+                            سبد خرید</span></a>
+                    <div class="dropdown-menu dropdown-menu-right shadow py-0" id="drpmenu2">
+                        <div class="card">
+                            <div class="card-header"><i class="fa fa-shopping-bag"></i>
+                                سبد خرید
                             </div>
-                            <div class="form-group">
-                                <label class="col-sm-6 control-label">پسورد</label>
-                                <div class="col-sm-12">
-                                    <input type="password" class="form-control" placeholder="Password"
-                                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                            <div class="card-body pb-0" id="shopshow">
+                                <div class="media py-3">
+                                    <img class="align-self-start myimgtop" src="images/book.png" />
+                                    <div class="media-body mr-4" style="font-size: 10px">
+                                        <h5>آموزش بوت استرپ</h5>
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                        گرافیک است.
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-sm-offset-2 col-sm-10">
-                                    <div class="custom-control custom-checkbox">
-                                        <input id="remember" class="custom-control-input" type="checkbox">
-                                        <label class="custom-control-label" for="remember">مرا به خاطر
-                                            بسپار</label>
+                                <div class="media py-3 border-top" id="mediashop">
+                                    <img class="align-self-start myimgtop" src="images/book.png" />
+                                    <div class="media-body mr-4" style="font-size: 10px">
+                                        <h5>آموزش بوت استرپ</h5>
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                        گرافیک است.
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <div class="col-sm-offset-2 col-sm-10">
-                                    <button type="submit" class="btn btn-default btn-primary">ورود</button>
-                                </div>
-                            </div>
-                            <hr class="my-2" />
-                            <a href="loginPage.html" class="btn btn-success btn-block">ثبت نام کنید</a>
-                        </form>
+                        </div>
                     </div>
                 </div>
-                <a class="link" href="#"> <i class="fa fa-shopping-cart" aria-hidden="true"><small
-                            class="badge badge-pill badge-success mybadge">2</small></i><span
-                        class="d-none d-md-inline">
-                        سبد خرید</span></a>
                 <a class="link" href="#"> <i class="fa fa-heart" aria-hidden="true"></i><span
                         class="d-none d-md-inline">
                         علاقه مندیها</span></a>
@@ -88,13 +117,13 @@
                             <a class="nav-link" href="test1.html">خانه<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item px-3 py-2">
-                            <a class="nav-link" href="#about">درباره کتاب</a>
+                            <a class="nav-link" href="test1.html">درباره کتاب</a>
                         </li>
                         <li class="nav-item px-3 py-2">
-                            <a class="nav-link" href="#authors">نویسندگان</a>
+                            <a class="nav-link" href="test1.html">نویسندگان</a>
                         </li>
                         <li class="nav-item px-3 py-2">
-                            <a class="nav-link" href="#contact">تماس با ما</a>
+                            <a class="nav-link" href="test1.html">تماس با ما</a>
                         </li>
                     </ul>
                 </div>

@@ -123,3 +123,17 @@ footer{
 .invalid-tooltip{
     line-height: 150%
 }
+.myimgtop{
+    width: 60px;
+}
+#drpmenu1{
+    width: 280px
+}
+#drpmenu2{
+    width: 440px
+}
+@media(max-width:768px){
+    #drpmenu2{
+        width: 350px
+    }
+}
