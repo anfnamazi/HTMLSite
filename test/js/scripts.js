@@ -96,3 +96,8 @@ $(".owl-carousel").owlCarousel({
         }
     }
 });
+lightbox.option({
+    'resizeDuration': 800,
+    'wrapAround': true,
+    albumLabel: "نویسنده شماره %1"
+})
