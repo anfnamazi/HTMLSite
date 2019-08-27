@@ -34,6 +34,12 @@ $(window).on("scroll load", function () {
         $("#contact .col-lg-9").addClass("fadeInRight").removeClass("invisible");
         $("#contact .col-lg-3").addClass("fadeInUp").removeClass("invisible");
     }
+    var offset4 = $("#better .owl-carousel").offset();
+    var top4 = offset4.top;
+    if (top4 - $(window).scrollTop() < $(window).height() - 220) {
+        $("#better .owl-carousel").addClass("fadeInUp").removeClass("invisible");
+        $("#better .owl-carousel").addClass("fadeInUp").removeClass("invisible");
+    }
 });
 
 //..........................................................................................
@@ -69,4 +75,24 @@ $("#shopbtn").click(function (e) {
     i += 1;
     $("#shopshow").append(copy);
     document.getElementById("mybadge").innerHTML = i;
+});
+$(".owl-carousel").owlCarousel({
+    rtl: true,
+    loop: true,
+    nav: true,
+    dots: false,
+    responsive: {
+        0: {
+            items: 1
+        },
+        400: {
+            items: 2
+        },
+        768: {
+            items: 3
+        },
+        1200: {
+            items: 4
+        }
+    }
 });

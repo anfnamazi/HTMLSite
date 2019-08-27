@@ -138,13 +138,42 @@ footer{
         width: 350px
     }
     .link{
-        font-size: 24px
+        font-size: 28px
     }
     .mybadge{
         font-size: 13px;
+        top: -9px;
     }
 }
 #drpmenu2>div{
     max-height: 400px;
     overflow: auto;
+}
+.owl-carousel-item p{
+    font-size:12px;
+    text-align: justify ;
+}
+.owl-prev, .owl-next{
+    position: absolute;
+    top: 50%;
+    margin-right: -10px;
+    font-size: 70px !important;
+    color: #999 !important;
+    outline: none !important;
+}
+.owl-next{
+    left: 0;
+    margin-left: -10px;
+}
+.owl-dot{
+    color: #222
+}
+.owl-prev:hover, .owl-next:hover{
+    color: black !important
+}
+.owl-carousel-item a{
+    text-decoration: none
+}
+.owl-carousel{
+    padding: 10px 0;
 }
