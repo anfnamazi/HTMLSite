@@ -44,7 +44,7 @@
     animation-duration: 1.5s
 }
 .link{
-    color: #555;
+    color: #777;
     text-decoration: none !important;
 }
 .link:hover{
@@ -187,4 +187,9 @@ footer{
     top: -16px;
     border: 8px solid transparent ;
     border-bottom-color:lightgray;
+}
+.nav-pills .show>.nav-link {
+    color: #000 !important;
+    background-color: transparent;
+    border-bottom: red 2px solid;
 }
