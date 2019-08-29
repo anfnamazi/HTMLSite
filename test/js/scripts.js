@@ -1,5 +1,5 @@
 $(window).scroll(function () {
-    if ($(window).scrollTop() > 140) {
+    if ($(window).scrollTop() > 160) {
         $(".navbar").addClass("fixed-top slideInDown");
         $(".mynav").addClass("m-5 p-3");
         $("#topbtn").removeClass("invisible");
