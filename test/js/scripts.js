@@ -1,3 +1,16 @@
+for (let index = 0; index < document.getElementsByClassName("price").length; index++) {
+    document.getElementsByClassName("price")[index].innerHTML = Math.floor(Math.random() * 100);
+}
+$("#shopbtn,#shopping").on("click", function (e) {
+    var sum = 0;
+    for (let index = 0; index < document.getElementsByClassName("price").length; index++) {
+        let myarray = document.getElementsByClassName("price")[index].innerHTML;
+        let a = parseInt(myarray, 10)
+        sum += a;
+    }
+    document.getElementById("price").innerHTML = sum;
+});
+//................................
 $(window).scroll(function () {
     if ($(window).scrollTop() > 160) {
         $(".navbar").addClass("fixed-top slideInDown");
@@ -41,9 +54,7 @@ $(window).on("scroll load", function () {
         $("#better .owl-carousel").addClass("fadeInUp").removeClass("invisible");
     }
 });
-
-//..........................................................................................
-
+//....................................
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function () {
     'use strict';
@@ -62,7 +73,7 @@ $(window).on("scroll load", function () {
         });
     }, false);
 })();
-//..................................................................................
+//.....................................
 $('#reset').on('click', function () {
     $('form').removeClass('was-validated');
 });
@@ -76,6 +87,7 @@ $("#shopbtn").click(function (e) {
     $("#shopshow").append(copy);
     document.getElementById("mybadge").innerHTML = i;
 });
+//.............................
 $(".owl-carousel").owlCarousel({
     rtl: true,
     loop: true,
@@ -100,17 +112,4 @@ lightbox.option({
     'resizeDuration': 800,
     'wrapAround': true,
     'albumLabel': "نویسنده شماره %1"
-});
-//.........................................
-for (let index = 0; index < document.getElementsByClassName("price").length; index++) {
-    document.getElementsByClassName("price")[index].innerHTML = Math.floor(Math.random() * 100);
-}
-$("#shopbtn,#shopping").on("click", function (e) {
-    var sum = 0;
-    for (let index = 0; index < document.getElementsByClassName("price").length; index++) {
-        let myarray = document.getElementsByClassName("price")[index].innerHTML;
-        let a = parseInt(myarray, 10)
-        sum += a;
-    }
-    document.getElementById("price").innerHTML = sum;
 });
