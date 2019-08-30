@@ -44,7 +44,7 @@
     animation-duration: 1.5s
 }
 .link{
-    color: #777;
+    color: #797979;
     text-decoration: none !important;
 }
 .link:hover{
@@ -104,7 +104,7 @@
     content: ' '
 }
 .list-unstyled>li>a:hover{
-    color: aquamarine
+    color: aqua
 }
 footer{
     background-color: #222
@@ -145,8 +145,8 @@ footer{
         top: -9px;
     }
 }
-#drpmenu2>div{
-    max-height: 400px;
+#drpmenu2>div>.card-body{
+    max-height: 260px;
     overflow: auto;
 }
 .owl-carousel-item p{
@@ -187,8 +187,14 @@ footer{
     border: 8px solid transparent ;
     border-bottom-color:lightgray;
 }
+@media(max-width:425px){
+    #drpmenu2 .card-header::before{
+        position: absolute;
+    }
+}
 .nav-pills .show>.nav-link {
     color: #000 !important;
     background-color: transparent;
     border-bottom: red 2px solid;
+    border-radius: 0;
 }

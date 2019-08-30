@@ -101,3 +101,16 @@ lightbox.option({
     'wrapAround': true,
     'albumLabel': "نویسنده شماره %1"
 });
+//.........................................
+for (let index = 0; index < document.getElementsByClassName("price").length; index++) {
+    document.getElementsByClassName("price")[index].innerHTML = Math.floor(Math.random() * 100);
+}
+$("#shopbtn,#shopping").on("click", function (e) {
+    var sum = 0;
+    for (let index = 0; index < document.getElementsByClassName("price").length; index++) {
+        let myarray = document.getElementsByClassName("price")[index].innerHTML;
+        let a = parseInt(myarray, 10)
+        sum += a;
+    }
+    document.getElementById("price").innerHTML = sum;
+});
