@@ -183,13 +183,13 @@ footer{
 #drpmenu1 .card-header::before , #drpmenu2 .card-header::before{
     content: "";
     position: fixed;
-    top: -16px;
-    border: 8px solid transparent ;
+    top: -18px;
+    border: 9px solid transparent ;
     border-bottom-color:lightgray;
 }
 @media(max-width:425px){
-    #drpmenu2 .card-header::before{
-        position: absolute;
+    #drpmenu1 .card-header::before , #drpmenu2 .card-header::before{
+        display: none;
     }
 }
 .nav-pills .show>.nav-link {
