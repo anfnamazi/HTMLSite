@@ -149,10 +149,6 @@ footer{
     max-height: 260px;
     overflow: auto;
 }
-.owl-carousel-item p{
-    font-size:12px;
-    text-align: justify ;
-}
 .owl-prev, .owl-next{
     position: absolute;
     top: 50%;
@@ -171,11 +167,8 @@ footer{
 .owl-prev:hover, .owl-next:hover{
     color: black !important
 }
-.owl-carousel-item a{
-    text-decoration: none
-}
 .owl-carousel{
-    padding: 10px 0;
+    padding: 20px 0;
 }
 .card-body>a>img:hover{
     box-shadow: 0px 0px 4px 4px rgba(255 , 0 , 0 , 0.3);
@@ -197,4 +190,31 @@ footer{
     background-color: transparent;
     border-bottom: red 2px solid;
     border-radius: 0;
+}
+#team-card .card-img-overlay{
+    background-color: rgba(0, 0, 0, 0.704);
+    text-align: center;
+    padding-top: 30%;
+    top: -70px;
+    opacity: 0;
+    transition: 0.6s
+}
+#team-card .card:hover .card-img-overlay{
+    top: 0;
+    opacity: 1;
+}
+#team-card .card-img-overlay a{
+    color: ;
+    text-decoration: none;
+}
+#team-card .card-img-overlay .card-text{
+    font-size: 14px
+}
+@media(max-width:992px){
+    #team-card .card-img-overlay .card-text{
+        font-size: 12px;
+    }
+    #team-card .card-img-overlay .card-title{
+        font-size: 20px
+    }
 }
