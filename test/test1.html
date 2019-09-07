@@ -8,6 +8,7 @@
     <title>mysite</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/rtl.css">
     <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
@@ -55,7 +56,7 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="col-sm-offset-2 col-sm-10">
-                                        <button type="submit" class="btn btn-default btn-primary">ورود</button>
+                                        <button type="submit" class="btn btn-primary">ورود</button>
                                     </div>
                                 </div>
                                 <hr class="my-2" />
@@ -101,8 +102,8 @@
                             </div>
                             <div class="card-footer">
                                 <small class="mb-1 d-block text-dark">جمع کل: <span id="price"></span> هزارتومان</small>
-                                <button type="button" class="btn btn-block btn-outline-success">ادامه فرآیند پرداخت <i
-                                        class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                                <button type="button" class="btn btn-block btn-outline-success waves-effect">ادامه
+                                    فرآیند پرداخت <i class="fa fa-arrow-left" aria-hidden="true"></i></button>
                             </div>
                         </div>
                     </div>
@@ -131,8 +132,35 @@
                         <li class="nav-item px-3 py-2">
                             <a class="nav-link" href="#home">خانه<span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item px-3 py-2">
-                            <a class="nav-link" href="#about">درباره کتاب</a>
+                        <li class="nav-item px-3 py-2" id="dropbtn">
+                            <div class="dropdown2" id="dropdown2">
+                                <a class="nav-link" href="#about">درباره کتاب</a>
+                                <div class="dropdown-content animated fadeIn">
+                                    <div class="header">
+                                        <h2>Mega Menu</h2>
+                                    </div>
+                                    <div class="row2">
+                                        <div class="column">
+                                            <h3>Category 1</h3>
+                                            <a href="#">Link 1</a>
+                                            <a href="#">Link 2</a>
+                                            <a href="#">Link 3</a>
+                                        </div>
+                                        <div class="column">
+                                            <h3>Category 2</h3>
+                                            <a href="#">Link 1</a>
+                                            <a href="#">Link 2</a>
+                                            <a href="#">Link 3</a>
+                                        </div>
+                                        <div class="column">
+                                            <h3>Category 3</h3>
+                                            <a href="#">Link 1</a>
+                                            <a href="#">Link 2</a>
+                                            <a href="#">Link 3</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                         <li class="nav-item px-3 py-2">
                             <a class="nav-link" href="#authors">نویسندگان</a>
@@ -170,14 +198,16 @@
     <section class="bg-dark py-4">
         <div class="container my-4">
             <form>
-                <div class="row">
-                    <div class="col-md mb-3 mb-md-0"><input type="text" class="form-control form-control-lg"
-                            placeholder="نام" />
+                <div class="row md-form form-lg d-flex align-items-center">
+                    <div class="col-md mb-3 mb-md-0 input-field"><input type="text"
+                            class="form-control form-control-lg text-white" id="num1" />
+                            <label for="num1">نام</label>
                     </div>
-                    <div class="col-md mb-3 mb-md-0"><input type="text" class="form-control form-control-lg"
-                            placeholder="ایمیل" />
+                    <div class="col-md mb-3 mb-md-0 input-field"><input type="text"
+                            class="form-control form-control-lg text-white" id="email1" />
+                            <label for="email1">ایمیل</label>
                     </div>
-                    <div class="col-md mb-3 mb-md-0"><button class="btn btn-info btn-lg btn-block">عضویت <i
+                    <div class="col-md mb-3 mb-md-0 input-field"><button class="btn btn-info btn-lg btn-block">عضویت <i
                                 class="fa fa-envelope-open-o" aria-hidden="true"></i></button>
                     </div>
                 </div>
@@ -406,49 +436,56 @@
                     <img class="card-img" src="images/book.png">
                     <div class="card-img-overlay">
                         <h4 class="card-title mb-4"><a href="#" class="text-warning">آموزش بوت استرپ</a></h4>
-                        <p class="card-text font-weight-light">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. </p>
+                        <p class="card-text font-weight-light">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                            و با استفاده از طراحان گرافیک است. </p>
                     </div>
                 </div>
                 <div class="card bg-dark text-white mx-3">
                     <img class="card-img" src="images/book.png">
                     <div class="card-img-overlay">
                         <h4 class="card-title mb-4"><a href="#" class="text-warning">آموزش بوت استرپ</a></h4>
-                        <p class="card-text font-weight-light">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. </p>
+                        <p class="card-text font-weight-light">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                            و با استفاده از طراحان گرافیک است. </p>
                     </div>
                 </div>
                 <div class="card bg-dark text-white mx-3">
                     <img class="card-img" src="images/book.png">
                     <div class="card-img-overlay">
                         <h4 class="card-title mb-4"><a href="#" class="text-warning">آموزش بوت استرپ</a></h4>
-                        <p class="card-text font-weight-light">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. </p>
+                        <p class="card-text font-weight-light">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                            و با استفاده از طراحان گرافیک است. </p>
                     </div>
                 </div>
                 <div class="card bg-dark text-white mx-3">
                     <img class="card-img" src="images/book.png">
                     <div class="card-img-overlay">
                         <h4 class="card-title mb-4"><a href="#" class="text-warning">آموزش بوت استرپ</a></h4>
-                        <p class="card-text font-weight-light">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. </p>
+                        <p class="card-text font-weight-light">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                            و با استفاده از طراحان گرافیک است. </p>
                     </div>
                 </div>
                 <div class="card bg-dark text-white mx-3">
                     <img class="card-img" src="images/book.png">
                     <div class="card-img-overlay">
                         <h4 class="card-title mb-4"><a href="#" class="text-warning">آموزش بوت استرپ</a></h4>
-                        <p class="card-text font-weight-light">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. </p>
+                        <p class="card-text font-weight-light">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                            و با استفاده از طراحان گرافیک است. </p>
                     </div>
                 </div>
                 <div class="card bg-dark text-white mx-3">
                     <img class="card-img" src="images/book.png">
                     <div class="card-img-overlay">
                         <h4 class="card-title mb-4"><a href="#" class="text-warning">آموزش بوت استرپ</a></h4>
-                        <p class="card-text font-weight-light">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. </p>
+                        <p class="card-text font-weight-light">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                            و با استفاده از طراحان گرافیک است. </p>
                     </div>
                 </div>
                 <div class="card bg-dark text-white mx-3">
                     <img class="card-img" src="images/book.png">
                     <div class="card-img-overlay">
                         <h4 class="card-title mb-4"><a href="#" class="text-warning">آموزش بوت استرپ</a></h4>
-                        <p class="card-text font-weight-light">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. </p>
+                        <p class="card-text font-weight-light">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                            و با استفاده از طراحان گرافیک است. </p>
                     </div>
                 </div>
             </div>
@@ -537,17 +574,19 @@
         </div>
     </footer>
 
-    <a class="btn position-fixed rounded-circle invisible animated shadow" id="topbtn" href="#home">
-        <b class="fa fa-chevron-up" aria-hidden="true"></b>
+    <a class="btn-floating btn-lg purple-gradient my-0 waves-effect waves-light invisible animated shadow" id="topbtn"
+        href="#home">
+        <i class="fa fa-chevron-up" aria-hidden="true"></i>
     </a>
 
 
-    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/smooth-scroll.min.js"></script>
     <script src="js/lightbox.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 

@@ -113,3 +113,8 @@ lightbox.option({
     'wrapAround': true,
     'albumLabel': "نویسنده شماره %1"
 });
+function a() {
+    for (var t = [].slice.call(this.querySelectorAll(e.INPUT)).filter(function (e) {
+        return !!e.bsCustomFileInput
+    }), n = 0, o = t.length; n < o; n++) i(t[n])
+}
