@@ -31,19 +31,15 @@
                             <div class="card-header"><i class="fa fa-user-circle"></i>
                                 ورود
                             </div>
-                            <form id="myform" class="card-body" action="">
-                                <div class="form-group">
-                                    <label class="col-sm-6 control-label">ایمیل</label>
-                                    <div class="col-sm-12">
-                                        <input type="email" class="form-control" placeholder="Email" required>
-                                    </div>
+                            <form id="myform form-row" class="card-body py-2" action="">
+                                <div class="md-form">
+                                    <input type="email" class="form-control validate" id="emaildwn" required>
+                                    <label for="emaildwn" class="col">ایمیل</label>
                                 </div>
-                                <div class="form-group">
-                                    <label class="col-sm-6 control-label">پسورد</label>
-                                    <div class="col-sm-12">
-                                        <input type="password" class="form-control" placeholder="Password"
-                                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
-                                    </div>
+                                <div class="md-form">
+                                    <input type="password" class="form-control validate" id="passdwn"
+                                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                                    <label for="passdwn" class="col">پسورد</label>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-sm-offset-2 col-sm-10">
@@ -201,11 +197,11 @@
                 <div class="row d-flex align-items-center">
                     <div class="col-md mb-3 mb-md-0 md-form form-lg"><input type="text"
                             class="form-control form-control-lg text-white" id="num1" />
-                        <label for="num1">نام</label>
+                        <label for="num1" class="mr-4">نام</label>
                     </div>
                     <div class="col-md mb-3 mb-md-0 md-form form-lg"><input type="text"
                             class="form-control form-control-lg text-white" id="email1" />
-                        <label for="email1">ایمیل</label>
+                        <label for="email1" class="mr-4">ایمیل</label>
                     </div>
                     <div class="col-md mb-3 mb-md-0"><button class="btn btn-info btn-lg btn-block">عضویت <i
                                 class="fa fa-envelope-open-o" aria-hidden="true"></i></button>

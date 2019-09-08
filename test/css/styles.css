@@ -279,9 +279,12 @@ footer{
     display: none !important;
   }
   .md-form label{
-      right: 20px;
-      left: 297.525px;
+      left: initial;
+      right: 0px;
   }
   .bg-light .border-bottom{
       border-color: #bbbbbb !important
   }
+  .md-form label.active{
+    transform: translateY(-16px) scale(1);
+}
