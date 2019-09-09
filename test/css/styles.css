@@ -200,7 +200,6 @@ footer{
     opacity: 1;
 }
 #team-card .card-img-overlay a{
-    color: ;
     text-decoration: none;
 }
 #team-card .card-img-overlay .card-text{
@@ -222,10 +221,11 @@ footer{
     left: 0;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding-top: 0px;
+    z-index: 1000;
   }
 /* Mega Menu header, if needed */
 .dropdown-content .header {
-    background: red;
+    background-color: mediumturquoise;
     padding: 16px;
     color: white;
   }
@@ -272,7 +272,8 @@ footer{
     }
   }
  .dropdown2:hover{
-    background-color: rgb(218, 216, 216)
+    background-color: mediumturquoise;
+    transition: 1s;
   }
 
   #dynamicContentWrapper-docsPanel {
@@ -287,4 +288,16 @@ footer{
   }
   .md-form label.active{
     transform: translateY(-16px) scale(1);
+}
+#mynav{
+    position: relative;
+    z-index: 100;
+}
+@media(max-width:768px){
+    .dropdown-content{
+        display: none !important;
+    }
+    .dropdown2:hover{
+        background-color: transparent
+    }
 }
