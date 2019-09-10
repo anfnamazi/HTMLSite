@@ -1,48 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test materialize</title>
+    <link href="css/icon.css" rel="stylesheet">
     <link rel="stylesheet" href="css/materialize.min.css">
-    <link rel="stylesheet" href="css/materialize_rtl.css">
     <link rel="stylesheet" href="css/styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
-    <nav>
+    <nav class="transparent z-depth-0" id="navbar">
         <div class="nav-wrapper">
             <div class="container">
                 <a href="#" class="brand-logo">LOGO</a>
-                <!-- mobile menu trigger -->
-                <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
-                <!-- desktop menu content -->
+                <a href="#" data-activates="mobile-menu" class="button-collapse"><i
+                        class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="#">item1</a></li>
                     <li><a href="#">item2</a></li>
-                    <!-- desktop menu dropdown trigger -->
                     <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i
                                 class="material-icons right">arrow_drop_down</i></a></li>
                     <li><a href="#">item3</a></li>
-                    <!-- desktop menu dropdown content -->
                     <ul id='dropdown1' class='dropdown-content'>
-                        <li><a href="#!">sub-dropdown1</a></li>
-                        <li><a href="#!">sub-dropdown2</a></li>
-                        <li><a href="#!">sub-dropdown3</a></li>
-                        <li><a href="#!">sub-dropdown4</a></li>
+                        <li><a href="#!">dropdown1</a></li>
+                        <li><a href="#!">dropdown2</a></li>
+                        <li><a href="#!">dropdown3</a></li>
+                        <li><a href="#!">dropdown4</a></li>
                     </ul>
                 </ul>
-                <!-- mobile and tablet menu content -->
                 <ul id="mobile-menu" class="side-nav">
                     <li>
                         <div class="userView">
                             <div class="background">
-                                <img src="http://lorempixel.com/output/abstract-q-c-640-480-10.jpg" alt="">
+                                <img src="images/abstract-q-c-640-480-10.jpg" alt="">
                             </div>
-                            <a href="#!user"><img class="circle"
-                                    src="http://lorempixel.com/output/people-q-c-640-480-9.jpg" alt=""></a>
+                            <a href="#!user"><img class="circle" src="images/person.png" alt=""></a>
                             <a href="#!name"><span class="white-text name">John Doe</span></a>
-                            <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                            <a href="#!email"><span class="white-text email">example@mail.com</span></a>
                         </div>
                     </li>
                     <li><a href="#!">item1</a></li>
@@ -50,16 +47,14 @@
                     <li class="no-padding">
                         <ul class="collapsible collapsible-accordion">
                             <li>
-                                <!-- mobile and tablet menu dropdown trigger -->
                                 <a class="collapsible-header">Dropdown<i
                                         class="material-icons right">arrow_drop_down</i></a>
                                 <div class="collapsible-body">
-                                    <!-- mobile and tablet dropdown content -->
                                     <ul>
-                                        <li><a href="#!">sub-dropdown1</a></li>
-                                        <li><a href="#!">sub-dropdown2</a></li>
-                                        <li><a href="#!">sub-dropdown3</a></li>
-                                        <li><a href="#!">sub-dropdown4</a></li>
+                                        <li><a href="#!">dropdown1</a></li>
+                                        <li><a href="#!">dropdown2</a></li>
+                                        <li><a href="#!">dropdown3</a></li>
+                                        <li><a href="#!">dropdown4</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -70,23 +65,41 @@
             </div>
         </div>
     </nav>
-    <div class="row">
-        <div class="col s12">
-            <ul class="tabs">
-                <li class="tab col s3"><a href="#test1">Test 1</a></li>
-                <li class="tab col s3"><a class="active" href="#test2">Test 2</a></li>
-                <li class="tab col s3 disabled"><a href="#test3">Disabled Tab</a></li>
-                <li class="tab col s3"><a href="#test4">Test 4</a></li>
-            </ul>
-        </div>
-        <div id="test1" class="col s12">Test 1</div>
-        <div id="test2" class="col s12">Test 2</div>
-        <div id="test3" class="col s12">Test 3</div>
-        <div id="test4" class="col s12">Test 4</div>
+
+    <div class="slider fullscreen">
+      <ul class="slides">
+        <li>
+          <img src="images/1.jpg" alt=""> <!-- random image -->
+          <div class="caption center-align">
+            <h3>This is our big Tagline!</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+        <li>
+          <img src="images/2.jpg" alt=""> <!-- random image -->
+          <div class="caption left-align">
+            <h3>Left Aligned Caption</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+        <li>
+          <img src="images/3.jpg" alt=""> <!-- random image -->
+          <div class="caption right-align">
+            <h3>Right Aligned Caption</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+        <li>
+          <img src="images/4.jpg" alt=""> <!-- random image -->
+          <div class="caption center-align">
+            <h3>This is our big Tagline!</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+      </ul>
     </div>
 
-
-    <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
 </body>

@@ -1,3 +1,2 @@
-$(".dropdown-content").click(function (e) {
-    e.stoppropagation();
-});
+$(".button-collapse").sideNav();
+$(".slider").slider({full_width:true});
