@@ -220,6 +220,70 @@
         </div>
     </section>
 
+    <section id="form">
+        <form>
+            <div class="container">
+                <div class="row">
+                    <div class="col m12">
+                        <h4 class="card-title center-align">Register</h4>
+                        <div class="input-field col s12 m6">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input type="text" id="txt_username" placeholder="Username" class="validate" />
+                            <label for="txt_username">Username</label>
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <input type="text" id="txt_firstname" class="validate" />
+                            <label for="txt_firstname">First Name</label>
+                        </div>
+
+                        <div class="input-field col s12 m6">
+                            <input id="txt_disable" class="validate" disabled />
+                            <label id="txt_disable">Age</label>
+                        </div>
+
+                        <div class="input-field col s12 m6">
+                            <input type="password" id="txt_pass" class="validate" required />
+                            <label for="txt_pass">Password</label>
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <i class="material-icons left prefix">email</i>
+                            <input type="email" class="validate" id="txt_email" required />
+                            <label for="txt_email" data-error="ایمیل نادرست است" data-success="صحیح">Email</label>
+                        </div>
+                        <div class="input-field col s12 m12">
+                            <i class="material-icons left prefix">edit</i>
+                            <textarea class="materialize-textarea" id="txt_desc" data-length="120" required></textarea>
+                            <label for="ttx_desc">Description</label>
+                        </div>
+                    </div>
+                    <input type="submit" value="Submit" class="btn green waves-effect waves-light" />
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <footer class="page-footer blue-grey darken-1">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m8 l6">
+                    <h5 class="white-text">First Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer
+                        content.</p>
+                </div>
+                <div class="col s12 m4 l6">
+                    <h5 class="white-text">Second Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer
+                        content.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2016 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
 
     <div class="fixed-action-btn click-to-toggle">
         <a class="btn-floating btn-large waves-effect waves-light teal"><i class="material-icons">menu</i></a>
