@@ -17,14 +17,29 @@
 .indicators .active{
     background-color: white !important
 }
-#aboutMe{
+#aboutUs{
     padding-top: 4rem;
+    padding-bottom: 4rem;
+    background:url("../images/world.jpg") center /cover no-repeat fixed;
+    position: relative;
 }
-#aboutMe>h4{
+#aboutUs::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background-color: rgba(255, 255, 255, 0.89)
+}
+#aboutUs .container{
+    position: relative;
+}
+#aboutUs h3{
     margin: 0px auto 20px auto;
     padding-bottom: 15px;
 }
-#aboutMe>div>p{
+#aboutUs>div>p{
     width: 80%;
     margin: 0 auto 27px auto;
 }
