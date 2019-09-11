@@ -18,8 +18,7 @@
     background-color: white !important
 }
 #aboutUs{
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding: 4rem 0;
     background:url("../images/world.jpg") center /cover no-repeat fixed;
     position: relative;
 }
@@ -35,11 +34,11 @@
 #aboutUs .container{
     position: relative;
 }
-#aboutUs h3{
+.section-head{
     margin: 0px auto 20px auto;
     padding-bottom: 15px;
 }
-#aboutUs>div>p{
+.section-body{
     width: 80%;
     margin: 0 auto 27px auto;
 }
@@ -49,4 +48,27 @@
 }
 #slider li {
     height: 100%;
+}
+#statistics{
+    padding: 60px 0;
+}
+#statistics{
+    background: url("../images/stats.jpg") center /cover no-repeat fixed;
+}
+#statistics>div>div>div{
+    padding-top: 25px;
+}
+.counter{
+    font-size: 46px;
+    color: greenyellow;
+    font-weight: 800
+}
+#statistics h6{
+    font-weight: 700;
+}
+#Portfolio{
+    padding: 4rem 0 0 0;
+}
+.carousel{
+    margin:-60px 0 -50px 0;
 }
