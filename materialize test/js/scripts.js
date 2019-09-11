@@ -1,2 +1,3 @@
 $(".button-collapse").sideNav();
-$(".slider").slider({full_width:true});
+$(".slider").slider();
+new WOW().init();

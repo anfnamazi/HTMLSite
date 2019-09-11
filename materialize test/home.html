@@ -8,6 +8,7 @@
     <title>test materialize</title>
     <link href="css/icon.css" rel="stylesheet">
     <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -65,7 +66,7 @@
         </div>
     </nav>
 
-    <div class="slider fullscreen">
+    <div class="slider" id="slider">
         <ul class="slides">
             <li>
                 <img src="images/1.jpg" alt=""> <!-- random image -->
@@ -107,7 +108,7 @@
                 perferendis ratione, praesentium distinctio quidem minus itaque. Aliquid eos omnis enim odit beatae
                 architecto repellendus vero?</p>
             <div class="row">
-                <div class="col s12 m6 l4">
+                <div class="col s12 m6 l4 wow fadeInUp" data-wow-duration="1.4s" data-wow-offset="200">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
                             <img src="images/3.jpg" />
@@ -125,7 +126,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col s12 m6 l4">
+                <div class="col s12 m6 l4 wow fadeInUp" data-wow-duration="1.4s" data-wow-offset="200"
+                    data-wow-delay="0.4s">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
                             <img src="images/1.jpg" />
@@ -143,7 +145,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col s12 m6 l4">
+                <div class="col s12 m6 l4 wow fadeInUp" data-wow-duration="1.4s" data-wow-offset="200"
+                    data-wow-delay="0.8s">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
                             <img src="images/2.jpg" />
@@ -165,6 +168,7 @@
         </div>
     </section>
 
+
     <div class="fixed-action-btn click-to-toggle">
         <a class="btn-floating btn-large waves-effect waves-light teal"><i class="material-icons">menu</i></a>
         <ul>
@@ -179,6 +183,7 @@
     </div>
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 
