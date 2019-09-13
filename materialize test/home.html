@@ -66,7 +66,7 @@
         </div>
     </nav>
 
-    <div class="slider" id="slider">
+    <div class="slider fullscreen" id="slider">
         <ul class="slides">
             <li>
                 <img src="images/1.jpg" alt=""> <!-- random image -->
@@ -183,7 +183,7 @@
             <div class="center section-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab rem minus, ex
                 voluptatum eaque, enim unde iure sed, ut omnis debitis consequatur. Maxime animi, iure recusandae est
                 explicabo quia rem.</div>
-            <div class="carousel wow zoomInDown" data-wow-offset="180">
+            <div class="carousel wow zoomInDown" data-wow-offset="200">
                 <a class="carousel-item" href="#one!"><img src="images/c1.jpg" alt=""></a>
                 <a class="carousel-item" href="#two!"><img src="images/c2.jpg" alt=""></a>
                 <a class="carousel-item" href="#three!"><img src="images/c3.jpg" alt=""></a>
@@ -199,7 +199,7 @@
             <p class="center section-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab rem minus, ex
                 voluptatum eaque, enim unde iure sed, ut omnis debitis consequatur. Maxime animi, iure recusandae est
                 explicabo quia rem.</p>
-            <div class="row wow zoomIn" data-wow-delay="0.3s" data-wow-offset="100">
+            <div class="row wow zoomIn" data-wow-delay="0.3s" data-wow-offset="150">
                 <div class="col s12 m6 l3 center">
                     <span class="counter">456</span>
                     <h6>Number of customers</h6>
@@ -221,7 +221,7 @@
     </section>
 
     <section id="form">
-        <form>
+        <form action="#">
             <div class="container">
                 <div class="row">
                     <div class="col m12">
@@ -248,7 +248,19 @@
                         <div class="input-field col s12 m6">
                             <i class="material-icons left prefix">email</i>
                             <input type="email" class="validate" id="txt_email" required />
-                            <label for="txt_email" data-error="ایمیل نادرست است" data-success="صحیح">Email</label>
+                            <label for="txt_email" data-error="Incorrect" data-success="Correct">Email</label>
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <div class="file-field input-field">
+                                <div class="btn">
+                                    <span>File</span>
+                                    <input type="file" multiple>
+                                </div>
+                                <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text" placeholder="Upload one or more files"
+                                        required>
+                                </div>
+                            </div>
                         </div>
                         <div class="input-field col s12 m12">
                             <i class="material-icons left prefix">edit</i>
@@ -286,7 +298,7 @@
     </footer>
 
     <div class="fixed-action-btn click-to-toggle">
-        <a class="btn-floating btn-large waves-effect waves-light teal"><i class="material-icons">menu</i></a>
+        <a id="menu" class="btn-floating btn-large waves-effect waves-light teal"><i class="material-icons">menu</i></a>
         <ul>
             <li class="btn-floating waves-effect waves-light orange"><a href="#!"><i
                         class="material-icons">comment</i></a></li>
@@ -296,6 +308,13 @@
                         class="material-icons">exit_to_app</i></a>
             </li>
         </ul>
+    </div>
+    <div class="tap-target teal lighten-2" data-activates="menu">
+        <div class="tap-target-content white-text">
+            <h5>I am here</h5>
+            <p>Provide value and encourage return visits by introducing users to new features and functionality at
+                contextually relevant moments.</p>
+        </div>
     </div>
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>

@@ -6,3 +6,6 @@ $('.counter').counterUp({
     time: 2000
 });
 $(".carousel").carousel();
+$(window).on("load", function () {
+    $('.tap-target').tapTarget('open');
+});

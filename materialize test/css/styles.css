@@ -4,10 +4,6 @@
     background-color: transparent;
     background-image: linear-gradient(rgba(0,0,0,0.8),transparent)
 }
-.indicators{
-    z-index: 100;
-    padding-bottom: 6vh;
-}
 .indicator-item{
     border-radius: 0 !important;
     height: 5px !important;
@@ -43,6 +39,7 @@
     margin: 0 auto 27px auto;
 }
 #slider{
+    position: relative !important;
     height: 100vh !important;
     min-height: 400px;
 }
@@ -71,4 +68,9 @@
 }
 .carousel{
     margin:-60px 0 -50px 0;
+}
+@media(max-width:600px){
+    .tap-target-content{
+        font-size: 11px
+    }
 }
