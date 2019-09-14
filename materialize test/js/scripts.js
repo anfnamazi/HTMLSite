@@ -1,4 +1,6 @@
-$(".button-collapse").sideNav();
+$(".button-collapse").sideNav({
+    edge:'right'
+});
 $(".slider").slider();
 new WOW().init();
 $('.counter').counterUp({
@@ -13,9 +15,9 @@ $(window).on("load", function () {
 $('input.autocomplete').keypress(function () {
     $('input.autocomplete').autocomplete({
         data: {
-            "Apple": 'images/apple.png',
-            "Microsoft": 'images/micro.jpg',
-            "Google": null
+            "اپل": 'images/apple.png',
+            "مایکروسافت": 'images/micro.jpg',
+            "گوگل": null
         },
         limit: 20,
         onAutocomplete: function (val) {
@@ -25,3 +27,14 @@ $('input.autocomplete').keypress(function () {
     });
 });
 //...................
+$('.datepicker').click(function () {
+    $(this).pickadate({
+        selectMonths: true, // Creates a dropdown to control month
+        selectYears: 15, // Creates a dropdown of 15 years to control year,
+        today: 'Today',
+        clear: 'Clear',
+        close: 'Ok',
+        closeOnSelect: false, // Close upon selecting a date,
+        container: undefined // ex. 'body' will append picker to body
+    });
+});
