@@ -46,7 +46,7 @@
 #slider li {
     height: 100%;
 }
-#statistics,#form{
+#statistics,#form,#skill{
     padding: 60px 0;
 }
 #statistics{
@@ -105,4 +105,15 @@ body{
 }
 .card .card-reveal p {
     text-align: justify;
+}
+.determinate{
+    height: 100%;
+    font-size: 20px;
+    color: white;
+    width: 0;
+    padding-top: 5px;
+    font-weight: 500
+}
+.progress .determinate{
+    transition-duration: 1.2s;
 }

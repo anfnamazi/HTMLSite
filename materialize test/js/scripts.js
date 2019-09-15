@@ -1,5 +1,5 @@
 $(".button-collapse").sideNav({
-    edge:'right'
+    edge: 'right'
 });
 $(".slider").slider();
 new WOW().init();
@@ -26,7 +26,7 @@ $('input.autocomplete').keypress(function () {
         minLength: 1,
     });
 });
-//...................
+//...................birthday
 $('.datepicker').click(function () {
     $(this).pickadate({
         selectMonths: true,
@@ -35,7 +35,19 @@ $('.datepicker').click(function () {
         clear: 'Clear',
         close: 'Ok',
         closeOnSelect: false,
-        container: undefined 
+        container: undefined
     });
 });
 $('select').material_select();
+//........................progress
+$('.skill-content').waypoint(function () {
+    $(".progress .determinate").each(function () {
+        // element == this
+
+
+        let width = $(this).data("val");
+        $(this).css("width", width + "%");
+    });
+}, {
+    offset: '75%'
+})
