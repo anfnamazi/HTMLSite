@@ -81,7 +81,7 @@
 .overlay{
     position: absolute; 
     top: 0;
-    bottom: 5px;
+    bottom: 7px;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5); /* Black see-through */
     color: #f1f1f1; 
@@ -95,10 +95,6 @@
 }
 .carousel a:hover .overlay{
     opacity: 1;
-}
-i.left{
-    margin-right: initial;
-    margin-left: 15px;
 }
 body{
     font-family: IranSans;
