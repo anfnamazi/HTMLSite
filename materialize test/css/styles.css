@@ -46,7 +46,7 @@
 #slider li {
     height: 100%;
 }
-#statistics,#form,#skill{
+#statistics,#form,#skill,#Portfolio{
     padding: 60px 0;
 }
 #statistics{
@@ -64,11 +64,12 @@
 #statistics h6{
     font-weight: 700;
 }
-#Portfolio{
+#team{
     padding: 4rem 0 0 0;
 }
 .carousel{
-    margin:-60px 0 -50px 0;
+    margin:0 !important;
+    height: 350px;
 }
 @media(max-width:600px){
     .tap-target-content{
@@ -116,4 +117,28 @@ body{
 }
 .progress .determinate{
     transition-duration: 1.2s;
+}
+#portfolio-filter{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+#portfolio-filter li{
+    flex-basis: 90px;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0 , 0 , 0 , 0.2);
+    transition-duration: 0.3s;
+}
+
+#portfolio-filter li:hover , #portfolio-filter .filter-active{
+    background-color: #2c6;
+    color: white;
 }

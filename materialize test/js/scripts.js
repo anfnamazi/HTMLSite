@@ -50,4 +50,20 @@ $('.skill-content').waypoint(function () {
     });
 }, {
     offset: '75%'
+});
+//....................portfolio
+var portfolio = $('#portfolio-content').isotope({originLeft:false});
+$('#portfolio-filter li').click(function () {
+    $('#portfolio-filter li').removeClass("filter-active");
+    $(this).addClass("filter-active");
+    portfolio.isotope({
+        filter: $(this).data("filter")
+    })
 })
+portfolio.on('arrangeComplete', function () {
+    if ($(window).scrollTop() % 2 == 0) {
+        $(window).scrollTop($(window).scrollTop() - 1);
+    } else {
+        $(window).scrollTop($(window).scrollTop() + 1);
+    }
+});
