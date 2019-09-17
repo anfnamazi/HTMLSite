@@ -91,7 +91,7 @@
     opacity:0;
     color: white;
     font-size: 20px;
-    padding: 30% 20px;
+    padding: 20% 20px;
     text-align: center;
 }
 .carousel a:hover .overlay{
@@ -141,4 +141,7 @@ body{
 #portfolio-filter li:hover , #portfolio-filter .filter-active{
     background-color: #2c6;
     color: white;
+}
+.overlay h5:hover{
+    color: aquamarine
 }

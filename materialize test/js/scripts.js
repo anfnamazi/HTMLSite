@@ -52,7 +52,7 @@ $('.skill-content').waypoint(function () {
     offset: '75%'
 });
 //....................portfolio
-var portfolio = $('#portfolio-content').isotope({originLeft:false});
+var portfolio = $('#portfolio-content').isotope({ originLeft: false });
 $('#portfolio-filter li').click(function () {
     $('#portfolio-filter li').removeClass("filter-active");
     $(this).addClass("filter-active");
