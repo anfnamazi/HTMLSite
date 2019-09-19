@@ -117,6 +117,7 @@ body{
 }
 .progress .determinate{
     transition-duration: 1.2s;
+    user-select: none;
 }
 #portfolio-filter{
     list-style: none;
@@ -136,6 +137,7 @@ body{
     cursor: pointer;
     box-shadow: 0 1px 3px rgba(0 , 0 , 0 , 0.2);
     transition-duration: 0.4s;
+    user-select: none;
 }
 
 #portfolio-filter .filter-active{
@@ -155,6 +157,9 @@ body{
     vertical-align: middle;
     justify-content: space-between;
     width: 120px;
+}
+.overlayimg{
+    user-select: none;
 }
 .overlayimg::after{
     content: '';
