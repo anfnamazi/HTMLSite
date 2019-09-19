@@ -67,3 +67,4 @@ portfolio.on('arrangeComplete', function () {
         $(window).scrollTop($(window).scrollTop() + 1);
     }
 });
+$('.materialboxed').materialbox();

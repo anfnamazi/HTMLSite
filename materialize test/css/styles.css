@@ -94,7 +94,7 @@
     padding: 20% 20px;
     text-align: center;
 }
-.carousel a:hover .overlay{
+.carousel a.active:hover .overlay{
     opacity: 1;
 }
 body{
