@@ -68,3 +68,4 @@ portfolio.on('arrangeComplete', function () {
     }
 });
 $('.materialboxed').materialbox();
+$('.modal').modal();

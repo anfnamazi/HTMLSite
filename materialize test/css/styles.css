@@ -173,3 +173,9 @@ body{
 .caption{
     z-index: 100;
 }
+.card-panel{
+    padding:18px;
+}
+.answerCm{
+    padding-right: 2rem;
+}
