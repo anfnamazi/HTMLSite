@@ -69,3 +69,7 @@ portfolio.on('arrangeComplete', function () {
 });
 $('.materialboxed').materialbox();
 $('.modal').modal();
+//..........................notify
+$("#notify").click(function () {
+    Materialize.toast('لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.', 4000, '', function () { prompt('جهت دریافت خبرنامه ها ایمیل خود را وارد نمایید.') })
+});
