@@ -62,7 +62,8 @@
     font-weight: 800
 }
 #statistics h6{
-    font-weight: 700;
+    font-family: yekanf;
+    font-size: 22px;
 }
 #team{
     padding: 4rem 0 0 0;
@@ -116,7 +117,7 @@ body{
     font-weight: 500
 }
 .progress .determinate{
-    transition-duration: 1.2s;
+    transition-duration: 1s;
     user-select: none;
 }
 #portfolio-filter{
