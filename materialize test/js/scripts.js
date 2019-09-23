@@ -67,9 +67,16 @@ portfolio.on('arrangeComplete', function () {
         $(window).scrollTop($(window).scrollTop() + 1);
     }
 });
+//...........
 $('.materialboxed').materialbox();
 $('.modal').modal();
 //..........................notify
 $("#notify").click(function () {
-    Materialize.toast('لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.', 4000, '', function () { prompt('جهت دریافت خبرنامه ها ایمیل خود را وارد نمایید.') })
+    prompt('جهت دریافت اخبار ایمیل خود را وارد نمایید.');
 });
+function notify() {
+    Materialize.toast('فرم شما جهت بررسی ارسال شد.', 2500, '', function () {
+        Materialize.toast('فرم شما با موفقیت ثبت شد.',5000);
+        $('#toast-container > div').css('background-color', '#2c6');
+    })
+}
