@@ -59,3 +59,6 @@ i.left{
     margin-left: 12px;
     padding-left: 23px;
 }
+#toast-container > div{
+	right:25px;
+}
