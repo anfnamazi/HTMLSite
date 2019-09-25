@@ -118,12 +118,10 @@
                     <img src="images/logo.svg" id="logo" />
                     <span class="align-middle">لوگوی موسسه</span>
                 </a>
-                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
-                    data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler d-lg-none" type="button" id="btntoggler">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <div class="d-none d-md-inline" id="collapsibleNavId">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item px-3">
                             <a class="nav-link py-3" href="#home">خانه<span class="sr-only">(current)</span></a>
@@ -172,6 +170,48 @@
         </nav>
     </div>
 
+    <section>
+        <div class="d-md-none" id="collapsibleNavId2">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link py-3 d-block" href="#home">خانه<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item" id="dropbtn">
+                    <a class="nav-link py-3 d-block d-flex align-items-center" href="#about" data-toggle="collapse"
+                        data-target="#collapse-content">درباره کتاب <i
+                            class="fa fa-caret-down align-middle text-muted mr-auto ml-4"
+                            aria-hidden="true"></i></a>
+                    <div class="collapse bg-light" id="collapse-content">
+                        <div class="side-col">
+                            <h5>دسته بند اول</h5>
+                            <a href="#">لینک 1</a>
+                            <a href="#">لینک 2</a>
+                            <a href="#">لینک 3</a>
+                        </div>
+                        <div class="side-col">
+                            <h5>دسته بندی دوم</h5>
+                            <a href="#">لینک 1</a>
+                            <a href="#">لینک 2</a>
+                            <a href="#">لینک 3</a>
+                        </div>
+                        <div class="side-col">
+                            <h5>دسته بندی سوم</h5>
+                            <a href="#">لینک 1</a>
+                            <a href="#">لینک 2</a>
+                            <a href="#">لینک 3</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link py-3 d-block" href="#authors">نویسندگان</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link py-3 d-block" href="#contact">تماس با ما</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
     <section class="showcase">
         <div class="text-white overly">
             <div class="container">
@@ -186,7 +226,8 @@
                                 class="fa fa-cart-plus" aria-hidden="true"></i></a>
                     </div>
                     <div class="col-lg-6">
-                        <img src="images/book.png" class="img-fluid d-none d-lg-block animated bounceInUp imgbook mx-auto">
+                        <img src="images/book.png"
+                            class="img-fluid d-none d-lg-block animated bounceInUp imgbook mx-auto">
                     </div>
                 </div>
             </div>

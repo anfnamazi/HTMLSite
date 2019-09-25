@@ -10,6 +10,18 @@ $("#shopbtn,#shopping").on("click", function (e) {
     }
     document.getElementById("price").innerHTML = sum;
 });
+//..........btn toggler md or down
+$("#btntoggler").on("click",function () {
+    if ($("#collapsibleNavId2").css('right') === '0px') {
+        $("#collapsibleNavId2").css('right', '-240px');
+        $("#btntoggler > span").removeClass('fa fa-times');
+        $("#btntoggler > span").addClass('navbar-toggler-icon');
+    } else {
+        $("#collapsibleNavId2").css('right', '0');
+        $("#btntoggler > span").removeClass('navbar-toggler-icon');
+        $("#btntoggler > span").addClass('fa fa-times');
+    }
+});
 //................................
 $(window).scroll(function () {
     if ($(window).scrollTop() > 160) {
