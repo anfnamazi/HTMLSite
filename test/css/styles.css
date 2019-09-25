@@ -15,6 +15,7 @@
 
 .showcase{
     background-image: url(../images/mountains.jpg);
+    overflow: hidden;
 }
 .overly{
     background-color: rgba(36, 156, 177, 0.541);
@@ -87,10 +88,10 @@
     margin-left: 4px;
     border-radius: 50%;
     text-align: center;
-    transition-duration: 0.6s;
+    transition-duration: 0.3s;
 }
 #links-footer>a:hover{
-    background-color: teal
+    background-color: rgb(50, 167, 155)
 }
 .list-unstyled>li>a{
     color: #fff;
@@ -213,7 +214,6 @@ footer{
         font-size: 20px
     }
 }
-/* Dropdown content (hidden by default) */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -223,7 +223,6 @@ footer{
     padding-top: 0px;
     z-index: 1000;
   }
-/* Mega Menu header, if needed */
 .dropdown-content .header {
     background-color: white;
     padding: 16px;
@@ -232,12 +231,10 @@ footer{
     box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.2)
   }
   
-  /* Show the dropdown menu on hover */
   .dropdown2:hover .dropdown-content {
     display: block;
   }
   
-  /* Create three equal columns that floats next to each other */
   .column {
     float: right;
     width: 33.33%;
@@ -246,7 +243,6 @@ footer{
     height: auto;
   }
   
-  /* Style links inside the columns */
   .column a {
     float: none;
     color: black;
@@ -256,12 +252,10 @@ footer{
     text-align: right;
   }
   
-  /* Add a background color on hover */
   .column a:hover {
     background-color: #ddd;
   }
   
-  /* Clear floats after the columns */
   .row2:after {
     content: "";
     display: table;
