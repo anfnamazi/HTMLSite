@@ -9,6 +9,23 @@ $font-josefinSans: "Josefin Sans",
 sans-serif;
 $font-nunito: "Nunito",
 sans-serif;
+$font-sahel:sahel,
+tahoma;
+$font-nastaliq:Nastaliq,
+tahoma;
+
+@font-face {
+    font-family: sahel;
+    src: url("../fonts/Sahel-Bold.eot");
+    src: url("../fonts/Sahel.ttf") format("ttf"), url("../fonts/Sahel.woff") format("woff");
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: Nastaliq;
+    src: url("../fonts/IranNastaliq.ttf");
+    font-weight: normal;
+}
 
 @mixin flexLayout {
     display: flex;
