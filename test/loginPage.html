@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mysite</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/rtl.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body id="home">
+    <header>
+        <div class="container">
+            <div class="d-flex justify-content-between py-2 myheader nav nav-pills">
+                <div class="dropdown nav-item">
+                    <a class="link nav-link" id="login" href="" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false"> <i class="fa fa-user" aria-hidden="true"></i><span
+                            class="d-none d-md-inline">
+                            وارد شوید</span></a>
+                    <div class="dropdown-menu dropdown-menu-right shadow py-0" id="drpmenu1">
+                        <div class="card">
+                            <div class="card-header"><i class="fa fa-user-circle"></i>
+                                ورود
+                            </div>
+                            <form id="myform" class="card-body" action="">
+                                <div class="form-group">
+                                    <label class="col-sm-6 control-label">ایمیل</label>
+                                    <div class="col-sm-12">
+                                        <input type="email" class="form-control" placeholder="Email" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-6 control-label">پسورد</label>
+                                    <div class="col-sm-12">
+                                        <input type="password" class="form-control" placeholder="Password"
+                                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <div class="custom-control custom-checkbox">
+                                            <input id="remember" class="custom-control-input" type="checkbox">
+                                            <label class="custom-control-label" for="remember">مرا به خاطر
+                                                بسپار</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <button type="submit" class="btn btn-default btn-primary">ورود</button>
+                                    </div>
+                                </div>
+                                <hr class="my-2" />
+                                <a href="loginPage.html" class="btn btn-success btn-block">ثبت نام کنید</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown nav-item">
+                    <a class="link nav-link" id="shopping" href="" data-toggle="dropdown"> <i
+                            class="fa fa-shopping-cart" aria-hidden="true"><small
+                                class="badge badge-pill badge-success mybadge" id="mybadge">2</small></i><span
+                            class="d-none d-md-inline">
+                            سبد خرید</span></a>
+                    <div class="dropdown-menu dropdown-menu-right shadow py-0" id="drpmenu2">
+                        <div class="card">
+                            <div class="card-header"><i class="fa fa-shopping-bag"></i>
+                                سبد خرید
+                            </div>
+                            <div class="card-body pb-0" id="shopshow">
+                                <div class="media py-3">
+                                    <img class="align-self-start myimgtop img-thumbnail" src="images/book.png" />
+                                    <div class="media-body mr-4" style="font-size: 10px">
+                                        <h6 class="d-flex  align-items-end">آموزش بوت استرپ<span
+                                                class="text-success mr-auto font-weight-light"
+                                                style="font-size: 12px"><span class="price"></span> هزارتومان</span>
+                                        </h6>
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                        گرافیک است.
+                                    </div>
+                                </div>
+                                <div class="media py-3 border-top" id="mediashop">
+                                    <img class="align-self-start myimgtop img-thumbnail" src="images/book.png" />
+                                    <div class="media-body mr-4" style="font-size: 10px">
+                                        <h6 class="d-flex  align-items-end">آموزش بوت استرپ<span
+                                                class="text-success mr-auto font-weight-light"
+                                                style="font-size: 12px"><span class="price"></span> هزارتومان</span>
+                                        </h6>
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                        گرافیک است.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <small class="mb-1 d-block text-dark">جمع کل: <span id="price"></span> هزارتومان</small>
+                                <button type="button" class="btn btn-block btn-outline-success">ادامه فرآیند پرداخت <i
+                                        class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="link nav-link" href="#"> <i class="fa fa-heart" aria-hidden="true"></i><span
+                        class="d-none d-md-inline">
+                        علاقه مندیها</span></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="mynav">
+        <nav class="navbar navbar-expand-md navbar-light bg-light py-3 shadow-sm animated">
+            <div class="container">
+                <a class="navbar-brand" href="test1.html">
+                    <img src="images/logo.svg" id="logo" />
+                    <span class="align-middle">لوگوی موسسه</span>
+                </a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item px-3 py-2">
+                            <a class="nav-link" href="test1.html">خانه<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item px-3 py-2">
+                            <a class="nav-link" href="test1.html">درباره کتاب</a>
+                        </li>
+                        <li class="nav-item px-3 py-2">
+                            <a class="nav-link" href="test1.html">نویسندگان</a>
+                        </li>
+                        <li class="nav-item px-3 py-2">
+                            <a class="nav-link" href="test1.html">تماس با ما</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <section class="showcase">
+        <div class="text-dark overly2">
+            <div class="container">
+                <form class="needs-validation bg-white p-4 card shadow-lg animated fadeInDown" novalidate>
+                    <fieldset>
+                        <legend class="my-4"><i class="fa fa-check-square-o" aria-hidden="true"></i> ثبت نام</legend>
+                        <div class="form-row">
+                            <div class="col-md-4 mb-5">
+                                <label>نام</label>
+                                <input type="text" class="form-control" placeholder="Name" required />
+                                <div class="invalid-tooltip">
+                                    لطفاً نام خود را وارد کنید.
+                                </div>
+                                <div class="valid-tooltip">
+                                    نام شما وارد شده است.
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-5">
+                                <label>نام خانوادگی</label>
+                                <input type="text" class="form-control" placeholder="Family" required />
+                                <div class="invalid-tooltip">
+                                    لطفاً نام خانوادگی خود را وارد کنید.
+                                </div>
+                                <div class="valid-tooltip">
+                                    نام خانوادگی شما وارد شده است.
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-5">
+                                <label>نام کاربری</label>
+                                <input type="text" class="form-control" placeholder="User Name" pattern="[\w]{3,}"
+                                    required />
+                                <div class="invalid-tooltip">
+                                    نام کاربری باید حداقل 3 کاراکتر و با حروف لاتین باشد.
+                                </div>
+                                <div class="valid-tooltip">
+                                    نام کاربری وارد شده معتبر است.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+
+                            <div class="form-group col-sm-6">
+                                <label>ایمیل</label>
+                                <input type="email" class="form-control" placeholder="Email" required>
+                                <div class="invalid-tooltip">
+                                    لطفاً ایمیل خود را وارد کنید.
+                                </div>
+                                <div class="valid-tooltip">
+                                    ایمیل شما مورد قبول است.
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label>پسورد</label>
+                                <input type="password" class="form-control" placeholder="Password"
+                                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                                <div class="invalid-tooltip">
+                                    رمز عبور باید ترکیب عدد و حروف بزرگ و کوچک لاتین و حداقل 8 کاراکتر باشد.
+                                </div>
+                                <div class="valid-tooltip">
+                                    پسورد شما مورد قبول است.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>آدرس</label>
+                            <input type="text" class="form-control" placeholder="1234 Main St" required>
+                            <div class="invalid-feedback">
+                                لطفا آدرس خود را وارد نمایید.
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>ادامه آدرس</label>
+                            <input type="text" class="form-control" placeholder="Apartment, studio, or floor">
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-md-4">
+                                <label>شهر</label>
+                                <input type="text" class="form-control" placeholder="city" required>
+                                <div class="invalid-feedback">
+                                    لطفا شهر خود را وارد کنید.
+                                </div>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>منطقه</label>
+                                <select class="custom-select form-control">
+                                    <option>منطقه یک</option>
+                                    <option>منطقه دو</option>
+                                    <option>منطقه سه</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>سن</label>
+                                <input type="number" class="form-control" placeholder="age" min="10" max="90" required>
+                                <div class="invalid-feedback">
+                                    لطفا سن خود را وارد کنید.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" required>
+                                    <div class="invalid-feedback">
+                                        لطفا تصویر کارت ملی خود را وارد نمایید.
+                                    </div>
+                                    <label class="custom-file-label">تصویر کارت ملی</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group my-5">
+                            <div class="custom-control custom-checkbox mt-4">
+                                <input type="checkbox" class="custom-control-input" id="custom2" required />
+                                <label class="custom-control-label" for="custom2">
+                                    <a data-toggle="modal" href="#modelId">شرایط و
+                                        قوانین</a> را قبول دارم.
+                                </label>
+                                <div class="invalid-tooltip">
+                                    شما باید قوانین را بپذیرید.
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">ارسال</button>
+                        <button type="reset" id="reset" class="btn btn-outline-secondary mr-4">بازنشانی</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="text-light text-justify pt-5">
+        <div class="container">
+            <div class="row mb-xl-2">
+                <div class="col-lg-4 col-md-6 px-3 pb-4 pb-lg-0">
+                    <h5 class="border-bottom pb-2 mb-2">درباره موسسه</h5>
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
+                        مورد نیاز و کاربردهای متنوع.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-6 px-3 pb-4 pb-lg-0">
+                    <h5 class="border-bottom pb-2 mb-2">پیوندهای مفید</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-angle-left"></i><a href="#">خانه</a></li>
+                        <li><i class="fa fa-angle-left"></i><a href="#">درباره ما</a></li>
+                        <li><i class="fa fa-angle-left"></i><a href="#">برترین آثار</a></li>
+                        <li><i class="fa fa-angle-left"></i><a href="#">قوانین و مقررات</a></li>
+                        <li><i class="fa fa-angle-left"></i><a href="#">حریم خصوصی</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 px-3 pb-4 pb-lg-0">
+                    <h5 class="border-bottom pb-2 mb-2">تماس با ما</h5>
+                    <p>
+                        تهران - خیابان انقلاب - پلاک ۱۲۳۴
+                    </p>
+                    <p>
+                        <strong>تلفن : </strong><span style="direction: ltr;display: inline-block">۰۲۱ -
+                            ۱۲۳۴۵۶۷۸۹</span><br>
+                        <strong>ایمیل : </strong>info@example.com<br>
+                    </p>
+                    <div id="links-footer">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: black;">
+            <p class="text-center p-3 mb-0">کلیه حقوق برای این موسسه محفوظ است.</p>
+        </div>
+    </footer>
+
+    <a class="btn position-fixed rounded-circle invisible animated shadow" id="topbtn" href="#home">
+        <b class="fa fa-chevron-up" aria-hidden="true"></b>
+    </a>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true"
+        style="z-index: 10000">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">شرایط و قوانین</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-justify">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
+                    و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+                    کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
+                    آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه
+                    ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که
+                    تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی
+                    دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                    <ul class="list-group-item-light mt-3">
+                        <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</li>
+                        <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</li>
+                        <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</li>
+                        <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</li>
+                        <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

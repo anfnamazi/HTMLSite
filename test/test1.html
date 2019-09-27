@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mysite</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/rtl.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body id="home">
+    <header>
+        <div class="container">
+            <div class="d-flex justify-content-between py-2 myheader nav nav-pills">
+                <div class="dropdown nav-item">
+                    <a class="link nav-link" id="login" href="" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false"> <i class="fa fa-user" aria-hidden="true"></i><span
+                            class="d-none d-md-inline">
+                            وارد شوید</span></a>
+                    <div class="dropdown-menu dropdown-menu-right shadow py-0" id="drpmenu1">
+                        <div class="card">
+                            <div class="card-header"><i class="fa fa-user-circle"></i>
+                                ورود
+                            </div>
+                            <form id="myform" class="card-body" action="">
+                                <div class="form-group">
+                                    <label class="col-sm-6 control-label">ایمیل</label>
+                                    <div class="col-sm-12">
+                                        <input type="email" class="form-control" placeholder="Email" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-6 control-label">پسورد</label>
+                                    <div class="col-sm-12">
+                                        <input type="password" class="form-control" placeholder="Password"
+                                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <div class="custom-control custom-checkbox">
+                                            <input id="remember" class="custom-control-input" type="checkbox">
+                                            <label class="custom-control-label" for="remember">مرا به خاطر
+                                                بسپار</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <button type="submit" class="btn btn-default btn-primary">ورود</button>
+                                    </div>
+                                </div>
+                                <hr class="my-2" />
+                                <a href="loginPage.html" class="btn btn-success btn-block">ثبت نام کنید</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown nav-item">
+                    <a class="link nav-link" id="shopping" href="" data-toggle="dropdown"> <i
+                            class="fa fa-shopping-cart" aria-hidden="true"><small
+                                class="badge badge-pill badge-success mybadge" id="mybadge">2</small></i><span
+                            class="d-none d-md-inline">
+                            سبد خرید</span></a>
+                    <div class="dropdown-menu dropdown-menu-right shadow py-0" id="drpmenu2">
+                        <div class="card">
+                            <div class="card-header"><i class="fa fa-shopping-bag"></i>
+                                سبد خرید
+                            </div>
+                            <div class="card-body pb-0" id="shopshow">
+                                <div class="media py-3">
+                                    <img class="align-self-start myimgtop img-thumbnail" src="images/book.png" />
+                                    <div class="media-body mr-4" style="font-size: 10px">
+                                        <h6 class="d-flex  align-items-end">آموزش بوت استرپ<span
+                                                class="text-success mr-auto font-weight-light"
+                                                style="font-size: 12px"><span class="price"></span> هزارتومان</span>
+                                        </h6>
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                        گرافیک است.
+                                    </div>
+                                </div>
+                                <div class="media py-3 border-top" id="mediashop">
+                                    <img class="align-self-start myimgtop img-thumbnail" src="images/book.png" />
+                                    <div class="media-body mr-4" style="font-size: 10px">
+                                        <h6 class="d-flex  align-items-end">آموزش بوت استرپ<span
+                                                class="text-success mr-auto font-weight-light"
+                                                style="font-size: 12px"><span class="price"></span> هزارتومان</span>
+                                        </h6>
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                        گرافیک است.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <small class="mb-1 d-block text-dark">جمع کل: <span id="price"></span> هزارتومان</small>
+                                <button type="button" class="btn btn-block btn-outline-success">ادامه فرآیند پرداخت <i
+                                        class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="link nav-link" href="#"> <i class="fa fa-heart" aria-hidden="true"></i><span
+                        class="d-none d-md-inline">
+                        علاقه مندیها</span></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="mynav">
+        <nav class="navbar navbar-expand-md navbar-light bg-light py-3 shadow-sm animated">
+            <div class="container">
+                <a class="navbar-brand" href="#home">
+                    <img src="images/logo.svg" id="logo" />
+                    <span class="align-middle">لوگوی موسسه</span>
+                </a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item px-3 py-2">
+                            <a class="nav-link" href="#home">خانه<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item px-3 py-2">
+                            <a class="nav-link" href="#about">درباره کتاب</a>
+                        </li>
+                        <li class="nav-item px-3 py-2">
+                            <a class="nav-link" href="#authors">نویسندگان</a>
+                        </li>
+                        <li class="nav-item px-3 py-2">
+                            <a class="nav-link" href="#contact">تماس با ما</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <section class="showcase">
+        <div class="text-white overly">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 text-center">
+                        <h1 class="animated slideInDown maintitle">آموزش سریع بوت استرپ در کوتاهترین زمان</h1>
+                        <p class="lead animated slideInRight">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                            و با
+                            استفاده از طراحان
+                            گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
+                        <a class="btn btn-lg btn-success animated fadeInUp mt-4" id="shopbtn">افزودن به سبد خرید <i
+                                class="fa fa-cart-plus" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="images/book.png" class="img-fluid d-none d-lg-block animated flipInY imgbook mx-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-dark py-4">
+        <div class="container my-4">
+            <form>
+                <div class="row">
+                    <div class="col-md mb-3 mb-md-0"><input type="text" class="form-control form-control-lg"
+                            placeholder="نام" />
+                    </div>
+                    <div class="col-md mb-3 mb-md-0"><input type="text" class="form-control form-control-lg"
+                            placeholder="ایمیل" />
+                    </div>
+                    <div class="col-md mb-3 mb-md-0"><button class="btn btn-info btn-lg btn-block">عضویت <i
+                                class="fa fa-envelope-open-o" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="about" class="bg-light text-center py-5">
+        <div class="container animated invisible">
+            <div class="row">
+                <div class="col">
+                    <div class="section-header mb-5 border-bottom">
+                        <h2 class="text-info pb-3">درباره‌ی کتاب</h2>
+                        <p class="">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                            از
+                            طراحان
+                            گرافیک است. چاپگرها و
+                            متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
+                    </div>
+                    <div id="accordianId" class="mx-auto" role="tablist" aria-multiselectable="true">
+                        <div class="card">
+                            <div class="card-header" role="tab" id="section1HeaderId">
+                                <h5 class="mb-0">
+                                    <a class="text-dark" data-toggle="collapse" data-target="#section1ContentId"
+                                        aria-expanded="true" aria-controls="section1ContentId">
+                                        نثر ساده و قابل فهم
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="section1ContentId" class="collapse" data-parent="#accordianId" role="tabpanel"
+                                aria-labelledby="section1HeaderId">
+                                <div class="card-body">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                    برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                                    می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و
+                                    متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+                                    الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید
+                                    داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان
+                                    مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود
+                                    طراحی اساسا مورد استفاده قرار گیرد.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab" id="section2HeaderId">
+                                <h5 class="mb-0">
+                                    <a class="text-dark" data-toggle="collapse" data-target="#section2ContentId"
+                                        aria-expanded="true" aria-controls="section2ContentId">
+                                        پوشش کامل ویژگی‌های بوت استرپ
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="section2ContentId" class="collapse" data-parent="#accordianId" role="tabpanel"
+                                aria-labelledby="section2HeaderId">
+                                <div class="card-body">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                    برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                                    می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و
+                                    متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+                                    الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید
+                                    داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان
+                                    مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود
+                                    طراحی اساسا مورد استفاده قرار گیرد.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab" id="section3HeaderId">
+                                <h5 class="mb-0">
+                                    <a class="text-dark" data-toggle="collapse" data-target="#section3ContentId"
+                                        aria-expanded="true" aria-controls="section3ContentId">
+                                        مطابق با آخرین تغییرات فریمورک محبوب بوت استرپ
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="section3ContentId" class="collapse" data-parent="#accordianId" role="tabpanel"
+                                aria-labelledby="section3HeaderId">
+                                <div class="card-body">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                    برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                                    می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و
+                                    متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+                                    الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید
+                                    داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان
+                                    مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود
+                                    طراحی اساسا مورد استفاده قرار گیرد.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="authors" class="text-center py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="section-header mb-5 border-bottom">
+                        <h2 class="text-info pb-3">درباره‌ی نویسندگان</h2>
+                        <p class="">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                            از
+                            طراحان
+                            گرافیک است. چاپگرها و
+                            متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card my-4 animated invisible">
+                                <div class="card-body">
+                                    <a href="images/person1.png" data-lightbox="img1"><img src="images/person1.png"
+                                            class="rounded-circle mb-3 w-50" /></a>
+                                    <h4 class="mb-4">نویسنده اول</h4>
+                                    <h6 class="text-muted px-3 mb-4">مولف ۴ کتاب</h6>
+                                    <p class="text-muted px-3 mb-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                        صنعت چاپ
+                                        و با استفاده از طراحان
+                                        گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                                    </p>
+                                    <div class="d-flex justify-content-center text-primary">
+                                        <div class="p-4"><a href="#"><i class="fa fa-facebook fa-2x"
+                                                    aria-hidden="true"></i></a></div>
+                                        <div class="p-4"><a href="#"><i class="fa fa-twitter fa-2x"
+                                                    aria-hidden="true"></i></a>
+                                        </div>
+                                        <div class="p-4"><a href="#"><i class="fa fa-google-plus-official fa-2x"
+                                                    aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card my-4 animated invisible">
+                                <div class="card-body">
+                                    <a href="images/person2.png" data-lightbox="img1"><img src="images/person2.png"
+                                            class="rounded-circle mb-3 w-50" /></a>
+                                    <h4 class="mb-4">نویسنده دوم</h4>
+                                    <h6 class="text-muted px-3 mb-4">مولف ۴ کتاب</h6>
+                                    <p class="text-muted px-3 mb-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                        صنعت چاپ
+                                        و با استفاده از طراحان
+                                        گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                                        است.
+                                    </p>
+                                    <div class="d-flex justify-content-center text-primary">
+                                        <div class="p-4"><a href="#"><i class="fa fa-facebook fa-2x"
+                                                    aria-hidden="true"></i></a></div>
+                                        <div class="p-4"><a href="#"><i class="fa fa-twitter fa-2x"
+                                                    aria-hidden="true"></i></a>
+                                        </div>
+                                        <div class="p-4"><a href="#"><i class="fa fa-google-plus-official fa-2x"
+                                                    aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card my-4 animated invisible">
+                                <div class="card-body">
+                                    <a href="images/person3.jpg" data-lightbox="img1"><img src="images/person3.jpg"
+                                            class="rounded-circle mb-3 w-50" /></a>
+                                    <h4 class="mb-4">نویسنده سوم</h4>
+                                    <h6 class="text-muted px-3 mb-4">مولف ۴ کتاب</h6>
+                                    <p class="text-muted px-3 mb-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                        صنعت چاپ
+                                        و با استفاده از طراحان
+                                        گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                                    </p>
+                                    <div class="d-flex justify-content-center text-primary">
+                                        <div class="p-4"><a href="#"><i class="fa fa-facebook fa-2x"
+                                                    aria-hidden="true"></i></a></div>
+                                        <div class="p-4"><a href="#"><i class="fa fa-twitter fa-2x"
+                                                    aria-hidden="true"></i></a>
+                                        </div>
+                                        <div class="p-4"><a href="#"><i class="fa fa-google-plus-official fa-2x"
+                                                    aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card my-4 animated invisible">
+                                <div class="card-body">
+                                    <a href="images/person4.jpg" data-lightbox="img1"><img src="images/person4.jpg"
+                                            class="rounded-circle mb-3 w-50" /></a>
+                                    <h4 class="mb-4">نویسنده چهارم</h4>
+                                    <h6 class="text-muted px-3 mb-4">مولف ۴ کتاب</h6>
+                                    <p class="text-muted px-3 mb-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                        صنعت چاپ
+                                        و با استفاده از طراحان
+                                        گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                                    </p>
+                                    <div class="d-flex justify-content-center text-primary">
+                                        <div class="p-4"><a href="#"><i class="fa fa-facebook fa-2x"
+                                                    aria-hidden="true"></i></a></div>
+                                        <div class="p-4"><a href="#"><i class="fa fa-twitter fa-2x"
+                                                    aria-hidden="true"></i></a>
+                                        </div>
+                                        <div class="p-4"><a href="#"><i class="fa fa-google-plus-official fa-2x"
+                                                    aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="better" class="py-4 bg-light">
+        <div class="container">
+            <div class="section-header mb-2 border-bottom text-center">
+                <h2 class="text-info pb-3">برترین آثار</h2>
+            </div>
+            <div class="owl-carousel animated invisible" id="team-card">
+                <div class="card bg-dark text-white mx-3">
+                    <img class="card-img" src="images/book.png">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title mb-4"><a href="#" class="text-warning">آموزش بوت استرپ</a></h4>
+                        <p class="card-text font-weight-light">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. </p>
+                    </div>
+                </div>
+                <div class="card bg-dark text-white mx-3">
+                    <img class="card-img" src="images/book.png">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title mb-4"><a href="#" class="text-warning">آموزش بوت استرپ</a></h4>
+                        <p class="card-text font-weight-light">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. </p>
+                    </div>
+                </div>
+                <div class="card bg-dark text-white mx-3">
+                    <img class="card-img" src="images/book.png">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title mb-4"><a href="#" class="text-warning">آموزش بوت استرپ</a></h4>
+                        <p class="card-text font-weight-light">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. </p>
+                    </div>
+                </div>
+                <div class="card bg-dark text-white mx-3">
+                    <img class="card-img" src="images/book.png">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title mb-4"><a href="#" class="text-warning">آموزش بوت استرپ</a></h4>
+                        <p class="card-text font-weight-light">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. </p>
+                    </div>
+                </div>
+                <div class="card bg-dark text-white mx-3">
+                    <img class="card-img" src="images/book.png">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title mb-4"><a href="#" class="text-warning">آموزش بوت استرپ</a></h4>
+                        <p class="card-text font-weight-light">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. </p>
+                    </div>
+                </div>
+                <div class="card bg-dark text-white mx-3">
+                    <img class="card-img" src="images/book.png">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title mb-4"><a href="#" class="text-warning">آموزش بوت استرپ</a></h4>
+                        <p class="card-text font-weight-light">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. </p>
+                    </div>
+                </div>
+                <div class="card bg-dark text-white mx-3">
+                    <img class="card-img" src="images/book.png">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title mb-4"><a href="#" class="text-warning">آموزش بوت استرپ</a></h4>
+                        <p class="card-text font-weight-light">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h3>فرم تماس</h3>
+            <p class="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                گرافیک است.</p>
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-9 animated invisible">
+                    <form>
+                        <div class="form-group input-group input-group-lg">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-user" aria-hidden="true"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="نام" />
+                        </div>
+                        <div class="form-group input-group input-group-lg">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                            </div>
+                            <input type="email" class="form-control" placeholder="ایمیل" />
+                        </div>
+                        <div class="form-group input-group input-group-lg">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                            </div>
+                            <textarea class="form-control" placeholder="متن پیام" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-info btn-block btn-lg">ارسال پیام</button>
+                    </form>
+                </div>
+                <div class="col-lg-3 d-none d-lg-block animated invisible">
+                    <img class="w-75 rounded-circle d-block mx-auto" src="images/logo.svg" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="text-light text-justify pt-5">
+        <div class="container">
+            <div class="row mb-xl-2">
+                <div class="col-lg-4 col-md-6 px-3 pb-4 pb-lg-0">
+                    <h5 class="border-bottom pb-2 mb-2">درباره موسسه</h5>
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
+                        مورد نیاز و کاربردهای متنوع.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-6 px-3 pb-4 pb-lg-0">
+                    <h5 class="border-bottom pb-2 mb-2">پیوندهای مفید</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-angle-left"></i><a href="#">خانه</a></li>
+                        <li><i class="fa fa-angle-left"></i><a href="#">درباره ما</a></li>
+                        <li><i class="fa fa-angle-left"></i><a href="#better">برترین آثار</a></li>
+                        <li><i class="fa fa-angle-left"></i><a href="#">قوانین و مقررات</a></li>
+                        <li><i class="fa fa-angle-left"></i><a href="#">حریم خصوصی</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 px-3 pb-4 pb-lg-0">
+                    <h5 class="border-bottom pb-2 mb-2">تماس با ما</h5>
+                    <p>
+                        تهران - خیابان انقلاب - پلاک ۱۲۳۴
+                    </p>
+                    <p>
+                        <strong>تلفن : </strong><span style="direction: ltr;display: inline-block">۰۲۱ -
+                            ۱۲۳۴۵۶۷۸۹</span><br>
+                        <strong>ایمیل : </strong>info@example.com<br>
+                    </p>
+                    <div id="links-footer">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: black;">
+            <p class="text-center p-3 mb-0">کلیه حقوق برای این موسسه محفوظ است.</p>
+        </div>
+    </footer>
+
+    <a class="btn position-fixed rounded-circle invisible animated shadow" id="topbtn" href="#home">
+        <b class="fa fa-chevron-up" aria-hidden="true"></b>
+    </a>
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
