@@ -58,3 +58,59 @@
         transition: ease 0.4s;
     }
 }
+
+.card {
+    width: 33.3333%;
+    height: 30vw;
+    position: relative;
+    overflow: hidden;
+
+    &:hover &-overlay{
+        left: 0;
+    }
+
+    &-overlay {
+        @include flexLayout;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        @extend %fullSpace;
+        color: $color-white;
+        background-color: rgba($color-primary, 0.6);
+        z-index: 10;
+        transition-duration: 500ms;
+
+        &-heading {
+            font-family: $font-nastaliq;
+            font-size: 50px;
+            @include textStyles;
+        }
+
+        &-paragraph {
+            font-family: $font-sahel;
+            font-size: 30px;
+            margin-bottom: 30px;
+            @include textStyles;
+        }
+
+        &-btn {
+            width: 150px;
+            height: 40px;
+            color: $color-primary;
+            font-family: $font-sahel;
+            font-size: 14px;
+            background-color: $color-white;
+            border: 1px solid $color-primary;
+            border-radius: 30px;
+            outline: none;
+            cursor: pointer;
+        }
+    }
+
+    &-img {
+        @extend %fullSpace;
+        object-fit: cover;
+        opacity: 0.5;
+    }
+}
