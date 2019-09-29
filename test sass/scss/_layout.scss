@@ -45,6 +45,11 @@
             right: -50vw;
             @include flexLayout;
             transition: right .8s cubic-bezier(1, 0, 0, 1);
+
+            @media (max-width: 600px) {
+                width: 100vw;
+                right: -100vw;
+            }
         }
 
         .nav-list {
@@ -63,6 +68,10 @@
                 text-align: center;
                 transition: all 0.5s;
 
+                @media (max-width: 1000px) {
+                    font-size: 30px;
+                }
+
                 &:hover {
                     color: $color-primary;
                     letter-spacing: 4px;
@@ -74,6 +83,10 @@
 
 .checkbox:checked~.navbar-navigation .navbar-navigation-left {
     left: 0;
+
+    @media (max-width: 600px) {
+        display: none;
+    }
 }
 
 .checkbox:checked~.navbar-navigation .navbar-navigation-right {
@@ -117,12 +130,16 @@
 }
 
 .about-us {
-    height: 90vh;
     display: flex;
     align-items: center;
+    margin-bottom: 30px;
 
     &-left {
         width: 40%;
+
+        @media (max-width:750px) {
+            display: none;
+        }
 
         img {
             width: 100%;
@@ -138,14 +155,40 @@
         padding: 0 100px;
         box-sizing: border-box;
 
+        @media (max-width:750px) {
+            width: 100%;
+        }
+
+        @media (max-width:1300px) {
+            padding: 0 40px;
+        }
+
         .main-heading {
             font-size: 60px;
             margin-bottom: 20px;
+
+            @media (max-width:1200px) {
+                margin-bottom: 10px;
+            }
+
+            @media (max-width:520px) {
+                font-size: 40px;
+                margin-bottom: 0;
+            }
         }
 
         .sub-heading {
             font-size: 60px;
             margin-bottom: 20px;
+
+            @media (max-width:1200px) {
+                font-size: 40px;
+                margin-bottom: 10px;
+            }
+
+            @media (max-width:520px) {
+                font-size: 25px;
+            }
         }
 
         .stars {
@@ -170,7 +213,7 @@
             }
 
             @media (max-width:1200px) {
-                font-size: 20px;
+                font-size: 18px;
             }
         }
     }
@@ -197,7 +240,7 @@
     .social-media {
         display: flex;
         width: 300px;
-        justify-content: space-between;
+        justify-content: space-around;
         margin-bottom: 70px;
 
         &-item {
@@ -210,6 +253,11 @@
             color: $color-secondary;
             transition: color 0.7s;
 
+
+            @media(max-width:850px) {
+                font-size: 30px;
+            }
+
             &:hover {
                 color: $color-primary;
             }
@@ -221,5 +269,12 @@
         font-size: 20px;
         color: $color-secondary;
         direction: rtl;
+        text-align: center;
+        padding: 0 20px;
+
+        @media(max-width:850px) {
+            font-size: 16px;
+        }
+
     }
 }
