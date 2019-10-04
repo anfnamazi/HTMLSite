@@ -1,5 +1,17 @@
 $color-gray:#777;
 
 body{
-    direction: rtl;
+    font-family: yekan;
+}
+
+.container-fluid{
+    max-width: 1220px;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.myshadow{
+    box-shadow: 0 2px 4px rgba($color: #000000, $alpha: .2)
 }

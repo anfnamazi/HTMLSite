@@ -1,21 +1,70 @@
-.top-menu {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    
+.header {
 
-    &_item {
-        
-    }
+    .top-menu {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-bottom: 5px;
 
-    &_link {
-        color: $color-gray;
-        text-decoration: none !important;
-        font-size: 2rem;
-        
-        &:hover{
-            color: red;
+        &_item {
+            font-size: 1.8rem;
+
+            @media(min-width: 768px) {
+                font-size: .9rem;
+                padding: 0 1rem;
+            }
+        }
+
+        &_link {
+            color: $color-gray;
+            text-align: right;
+
+            .badge {
+                font-size: 14px;
+                position: relative;
+                bottom: 13px;
+                left: 10px;
+            }
+
+            span {
+                padding-right: 7px;
+            }
+
+            &:hover {
+                color: red;
+            }
         }
     }
 
+    .basket {
+
+        &_btn {
+            color: white;
+            background-color: #4b5;
+            display: flex;
+            align-items: stretch;
+            border-radius: 5px;
+
+            i {
+                background-color: #6c6;
+                padding: 10px 15px;
+                border-radius: 0 5px 5px 0;
+            }
+
+            &_span {
+                padding: 5px 10px;
+            }
+        }
+    }
+
+    .search{
+
+        &_input{
+            width: 400px;
+
+            @media(max-width: 992px) {
+                width:250px;
+            }
+        }
+    }
 }

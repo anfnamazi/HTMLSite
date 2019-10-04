@@ -16,13 +16,41 @@
 
 <body>
     <header class="header">
-        <div class="container">
-            <ul class="top-menu">
-                <li class="top-menu_item"><a href="#" class="top-menu_link fa fa-user"></a></li>
-                <li class="top-menu_item"><a href="#" class="top-menu_link fa fa-heart"></a></li>
-                <li class="top-menu_item"><a href="#" class="top-menu_link fa fa-shopping-cart"></a></li>
-                <li class="top-menu_item"><a href="#" class="top-menu_link fa fa-gift"></a></li>
-            </ul>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8">
+                    <ul class="top-menu list-unstyled justify-content-md-start pr-md-3 py-4 py-md-2">
+                        <li class="top-menu_item"><a href="#" class="top-menu_link"><i class="fa fa-user"
+                                    aria-hidden="true"></i><span class="d-none d-md-inline">وارد شوید</span></a></li>
+                        <li class="top-menu_item"><a href="#" class="top-menu_link"><i class="fa fa-heart"
+                                    aria-hidden="true"></i><span class="d-none d-md-inline">علاقه مندی ها</span></a>
+                        </li>
+                        <li class="top-menu_item"><a href="#" class="top-menu_link"><i class="fa fa-gift"
+                                    aria-hidden="true"></i><span class="d-none d-md-inline">کارت هدیه</span></a></li>
+                        <li class="top-menu_item d-md-none"><a href="#" class="top-menu_link"><i
+                                    class="fa fa-shopping-cart" aria-hidden="true"></i><span
+                                    class="badge badge-pill badge-success">2</span></a></li>
+                    </ul>
+                    <div class="d-none d-md-flex">
+                        <div class="basket">
+                            <a href="#" class="basket_btn myshadow"><i class="fa fa-shopping-cart"
+                                    aria-hidden="true"></i><span class="basket_btn_span">سبد خرید<span
+                                        class="badge badge-pill badge-light px-2 mr-1">2</span></span></a>
+                        </div>
+                        <div class="search">
+                            <div class="input-group mr-3">
+                                <input class="form-control search_input" type="text" placeholder="جستجو">
+                                <div class="input-group-append">
+                                    <button class="input-group-btn btn btn-secondary"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-none d-md-block text-left py-md-3">
+                    <img src="images/logo.png" alt="">
+                </div>
+            </div>
         </div>
     </header>
 
