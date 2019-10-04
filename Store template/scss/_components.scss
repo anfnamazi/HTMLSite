@@ -57,14 +57,15 @@
         }
     }
 
-    .search{
+    .search {
 
-        &_input{
+        &_input {
             width: 400px;
 
             @media(max-width: 992px) {
-                width:250px;
+                width: 250px;
             }
         }
     }
 }
+

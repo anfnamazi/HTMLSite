@@ -1,18 +1,46 @@
-.navbar{
+.navbar {
     font-size: 12px;
     padding: 0;
 }
 
-main{
+main {
     background-color: #eee;
 }
 
-.card-header{
+.card-header {
     font-size: 14px;
     padding: 7px 20px;
     margin-bottom: 10px;
+    border-bottom: none;
 }
 
-.card-title{
+.card-title {
     font-size: 14px;
+}
+
+.media {
+    margin: 10px 15px;
+
+    &_item {
+        line-height: 70%;
+    }
+
+    &_img {
+        &:hover {
+            box-shadow: 0 0 8px rgba($color: #f44, $alpha: .7)
+        }
+    }
+
+    &_link {
+        color: #222;
+        font-size: 12px;
+
+        &:hover {
+            color: red;
+        }
+    }
+
+    &_footer {
+        font-size: 11px;
+    }
 }
