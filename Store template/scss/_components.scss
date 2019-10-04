@@ -40,13 +40,13 @@
 
         &_btn {
             color: white;
-            background-color: #4b5;
+            background-color: $color-green;
             display: flex;
             align-items: stretch;
             border-radius: 5px;
 
             i {
-                background-color: #6c6;
+                background-color: $color-greenLight;
                 padding: 10px 15px;
                 border-radius: 0 5px 5px 0;
             }
