@@ -55,6 +55,7 @@ main {
     height: 50px;
     background-color: rgba(60, 70, 90, 0.8);
     user-select: none;
+    border-radius: 0 0 5px 5px;
 
     @media (max-width:768px) {
         display: none;
