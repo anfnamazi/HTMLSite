@@ -44,3 +44,47 @@ main {
         font-size: 11px;
     }
 }
+
+.carousel-indicators {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: auto;
+    height: 50px;
+    background-color: rgba(60, 70, 90, 0.8);
+    user-select: none;
+
+    @media (max-width:768px) {
+        display: none;
+    }
+
+    li {
+        height: initial;
+        text-indent: initial;
+        width: 20%;
+        text-align: center;
+        margin: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 12px;
+        padding-top: 10px;
+    }
+
+    .active {
+        color: #444;
+
+        &::before {
+            content: '';
+            border: 10px solid transparent;
+            border-bottom-color: white;
+            width: initial;
+            position: absolute;
+            top: -20px;
+            right: 50%;
+            left: auto;
+            transform: translateX(10px);
+        }
+    }
+}

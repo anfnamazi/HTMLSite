@@ -2,18 +2,18 @@ $color-gray:#777;
 $color-green: #4b5;
 $color-greenLight: #6c6;
 
-body{
+body {
     font-family: yekan;
 }
 
-.container-fluid{
+.container-fluid {
     max-width: 1220px;
 }
 
-a:hover{
+a:hover {
     text-decoration: none;
 }
 
-.myshadow{
+.myshadow {
     box-shadow: 0 0px 3px rgba($color: #000000, $alpha: .25);
 }
