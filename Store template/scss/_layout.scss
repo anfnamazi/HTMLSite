@@ -10,7 +10,6 @@ main {
 .card-header {
     font-size: 14px;
     padding: 7px 20px;
-    margin-bottom: 10px;
     border-bottom: none;
 }
 
@@ -87,5 +86,20 @@ main {
             left: auto;
             transform: translateX(10px);
         }
+    }
+}
+
+.card-body {
+    padding: 8px;
+}
+
+.top-footer {
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    background-color: #343a40;
+
+    a {
+        color: white;
     }
 }
