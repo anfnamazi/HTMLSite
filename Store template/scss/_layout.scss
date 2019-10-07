@@ -89,17 +89,65 @@ main {
     }
 }
 
-.card-body {
-    padding: 8px;
+.owl-carousel {
+
+    .card-img-top {
+        padding: 10px;
+        object-fit: cover;
+    }
+
+    h5 {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
 }
 
 .top-footer {
     font-size: 14px;
     text-align: center;
     color: white;
-    background-color: #343a40;
 
     a {
         color: white;
+    }
+}
+
+.bottom-footer {
+    background-color: #111;
+    padding-top: 35px;
+
+    &-item {
+        padding: 3px;
+    }
+
+    &-link {
+        font-size: 14px;
+
+        &:hover {
+            color: white !important;
+        }
+    }
+
+    &-social {
+        padding-top: 40px;
+        display: flex;
+        justify-content: space-around;
+        max-width: 300px;
+        font-size: 1.4rem;
+
+        a {
+            height: 35px;
+            width: 35px;
+            color: white;
+            background-color: #333;
+            border-radius: 50%;
+            line-height: 180%;
+            text-align: center;
+            transition-duration: .3s;
+
+            &:hover{
+                background-color: lightseagreen;
+            }
+        }
     }
 }
