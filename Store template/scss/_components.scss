@@ -70,13 +70,18 @@
 }
 
 .owl-nav {
-    font-size: 4rem;
+    font-size: 3.5rem;
+    color: #888;
 
     .owl-next {
         position: absolute;
         outline: none;
         bottom: 50%;
         left: -8px;
+
+        &:hover {
+            color: #000 !important;
+        }
     }
 
     .owl-prev {
@@ -84,5 +89,9 @@
         outline: none;
         bottom: 50%;
         right: 0;
+
+        &:hover {
+            color: #000 !important;
+        }
     }
 }

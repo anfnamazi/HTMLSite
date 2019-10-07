@@ -19,7 +19,11 @@ a:hover {
 }
 
 .owl-carousel {
-    padding: 10px 0;
+
+    .card-img-top {
+        padding: 10px;
+        object-fit: cover;
+    }
 
     h5 {
         font-size: 12px;
