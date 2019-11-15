@@ -1,0 +1,24 @@
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+
+    .nav-item {
+        border-top: 1px solid #eee;
+        padding: 0 10px;
+
+        @media (min-width:760px) {
+            border-top: none
+        }
+    }
+}
+
+#bold-news {
+    .card-img-overlay {
+        color: white;
+        background-color: rgba($color: #000000, $alpha: .5);
+        display: flex;
+        flex-flow: column;
+        justify-items: start;
+        padding-top: 40%;
+    }
+}

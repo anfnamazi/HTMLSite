@@ -1,0 +1,33 @@
+.navbar {
+    &-item {
+        padding-right: 15px;
+        margin-right: 15px;
+        font-size: 1.3rem;
+        cursor: pointer;
+
+        &:hover {
+            color: $color-primary !important;
+        }
+    }
+
+    .nav-link {
+        &:hover {
+            color: $color-primary !important;
+        }
+    }
+
+    #search-input {
+        height: 45px;
+        position: absolute;
+        top: 5px;
+        left: 50px;
+        width: auto;
+        right: 15px;
+        user-select: none;
+
+        input {
+            border: none;
+            background-color: rgb(247, 245, 248);
+        }
+    }
+}
