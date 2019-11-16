@@ -1,4 +1,4 @@
-$color-primary:rgb(221, 196, 51);
+$color-primary:#f9b500;
 
 
 * {
@@ -7,7 +7,17 @@ $color-primary:rgb(221, 196, 51);
     box-sizing: border-box;
 }
 
-html,body{
+html,
+body {
     max-width: 1200px;
     margin: auto;
+}
+
+a {
+    text-decoration: none;
+    transition: all .2s;
+
+    &:hover {
+        color: $color-primary !important;
+    }
 }
