@@ -30,6 +30,7 @@
     overflow: hidden;
     height: auto;
     border: 0;
+    border-radius: 0;
 
     img {
         margin: -8% 0;
@@ -65,5 +66,29 @@
         display: inline-block;
         margin-left: 15px;
 
+    }
+}
+
+.title {
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        border-bottom: 1px solid #ccc;
+        width: 100%;
+        top: 54px;
+        right: 0;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        border-bottom: 5px solid $color-primary;
+        width: 80px;
+        top: 50px;
+        z-index: 1;
     }
 }

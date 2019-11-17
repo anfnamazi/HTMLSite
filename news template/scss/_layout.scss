@@ -25,3 +25,15 @@
         padding: 0 3px;
     }
 }
+
+#main-news {
+    .list-group {
+        li {
+            border-radius: 0;
+            border-color: white;
+            background-color: $color-primary;
+            text-align: center;
+            font-weight: 700;
+        }
+    }
+}
