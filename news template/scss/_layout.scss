@@ -29,6 +29,7 @@
 #main-news {
     .list-group {
         li {
+            direction: ltr;
             border-radius: 0;
             border-color: white;
             background-color: $color-primary;

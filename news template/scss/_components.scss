@@ -92,3 +92,18 @@
         z-index: 1;
     }
 }
+
+.article-title {
+    display: inline-block;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.text-muted b{
+    font-size: .9rem;
+    color: black;
+    letter-spacing: 2px;
+}
