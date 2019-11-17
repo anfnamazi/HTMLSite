@@ -1,6 +1,7 @@
 .navbar-brand {
     img {
         transition-duration: all 1s !important;
+
         @media (max-width:768px) {
             width: 75%;
         }
@@ -23,10 +24,19 @@
 }
 
 .card {
-
     margin: 4px 0;
     user-select: none;
     padding: 0 !important;
+    overflow: hidden;
+    height: auto;
+    border: 0;
+    
+    img {
+        margin: -8% 0;
+        @media (max-width:992px) {
+            margin: 0;
+        }
+    }
 
     &-img-overlay {
         height: 100%;
@@ -35,6 +45,9 @@
         display: flex;
         flex-flow: column;
         justify-content: flex-end;
+        @media (max-width:992px) {
+            padding-bottom: 0;
+        }
 
         h5 {
             font-size: 1rem;
