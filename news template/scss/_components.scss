@@ -1,3 +1,12 @@
+.navbar-brand {
+    img {
+        transition-duration: all 1s !important;
+        @media (max-width:768px) {
+            width: 75%;
+        }
+    }
+}
+
 #search-input {
     height: 45px;
     position: absolute;
@@ -16,6 +25,8 @@
 .card {
 
     margin: 4px 0;
+    user-select: none;
+    padding: 0 !important;
 
     &-img-overlay {
         height: 100%;
@@ -23,17 +34,15 @@
         background-color: rgba($color: #000000, $alpha: .5);
         display: flex;
         flex-flow: column;
-        user-select: none;
         justify-content: flex-end;
 
         h5 {
-            font-size: 1.1rem;
+            font-size: 1rem;
             line-height: 180%;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
 
             @media (max-width:500px) {
-                font-size: 1rem;
-                margin-bottom: 15px;
+                margin-bottom: 10px;
             }
         }
     }
@@ -46,7 +55,7 @@
 
     li {
         display: inline-block;
-        margin-left: 20px;
+        margin-left: 15px;
 
     }
 }
