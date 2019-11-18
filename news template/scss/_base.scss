@@ -12,6 +12,14 @@ body {
     margin: auto;
 }
 
+.media {
+    color: #000;
+
+    h5 {
+        font-size: 1.1rem;
+    }
+}
+
 a {
     text-decoration: none !important;
     transition: all .2s;

@@ -37,4 +37,16 @@
             font-weight: 700;
         }
     }
+
+    .media {
+        margin: 10px 0;
+
+        .media-body {
+            padding-right: 20px;
+
+            ul {
+                line-height: 150%;
+            }
+        }
+    }
 }
