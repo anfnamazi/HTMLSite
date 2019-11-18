@@ -50,3 +50,15 @@
         }
     }
 }
+
+footer {
+    background: #191919;
+    color: white;
+    z-index: 1;
+
+    #footer {
+        background: url(../images/map.png) no-repeat center;
+        background-size: cover;
+        height: 500px;
+    }
+}
