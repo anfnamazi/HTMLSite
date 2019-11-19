@@ -103,7 +103,21 @@
     width: 200px;
 }
 
-.text-muted b{
+.text-muted b {
     font-size: .9rem;
     color: black;
+}
+
+.input-group {
+    .form-control:first-child {
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+    }
+
+    .input-group-append {
+        .btn:last-child {
+            border-top-left-radius: 0 !important;
+            border-bottom-left-radius: 0 !important;
+        }
+    }
 }
